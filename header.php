@@ -21,6 +21,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php get_template_part( 'template-parts/navigation/navigation', 'contact' ); ?>
+<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 <div id="page" class="site<?php if(is_active_sidebar( 'sidebar-1' ) && !is_page()) echo ' has-sidebar'; ?><?php if(is_page()) echo ' draco-page'; ?>">
 	
 	<?php get_template_part( 'template-parts/header/header', 'image' ); ?>

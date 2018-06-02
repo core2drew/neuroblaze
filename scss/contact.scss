@@ -4,7 +4,8 @@
   @include flexbox();
   @include justify-content(space-between);
   padding: 7px 135px;
-  background-color: $contact-header-top-bg-color;
+  background-color: $primary-blue;
+  color: #fff;
   > .details {
     > .phone, > .mobile {
       margin-right: 15px;
@@ -20,8 +21,16 @@
     }
   }
   > .social-media {
+    @include flexbox();
     > .link {
+      @include flexbox();
+      @include align-items(center);
       margin-left: 10px;
+    }
+
+    > .link > .fab {
+      font-size: 1.2em;
+      color: #fff;
     }
   }
 }

@@ -1,0 +1,13 @@
+#page {
+  > .header {
+    @include flexbox();
+    @include align-items(center);
+    background-image: url('../neuroblaze/assets/img/header.jpg');
+    height: 100vh;
+    background-size: cover;
+    
+    > .info {
+      position:static;
+    }
+  }
+}

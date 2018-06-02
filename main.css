@@ -107,7 +107,19 @@
     flex-wrap: wrap; } }
 
 #page > .header {
-  display: block; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  background-image: url("../neuroblaze/assets/img/header.jpg");
+  height: 100vh;
+  background-size: cover; }
+  #page > .header > .info {
+    position: static; }
 
 .header-menu-top {
   display: -webkit-box;
@@ -121,10 +133,25 @@
   justify-content: space-between;
   -moz-justify-content: space-between;
   -webkit-justify-content: space-between;
-  position: static;
-  padding: 0 135px; }
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  margin-top: 25px; }
   .header-menu-top > .logo {
-    margin: 0; }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-left: 135px; }
+  .header-menu-top > .site-links {
+    margin-right: 135px; }
+    .header-menu-top > .site-links > .link {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: #fff; }
+    .header-menu-top > .site-links > .link:nth-last-child(n + 2) {
+      margin-right: 50px; }
+    .header-menu-top > .site-links > .link:hover {
+      color: #dcba1c; }
   .header-menu-top > .mobile-bar {
     display: none; }
 
@@ -138,7 +165,8 @@
   -moz-justify-content: space-between;
   -webkit-justify-content: space-between;
   padding: 7px 135px;
-  background-color: #08afe4; }
+  background-color: #08afe4;
+  color: #fff; }
   .contact-header-top > .details > .phone, .contact-header-top > .details > .mobile {
     margin-right: 15px; }
   .contact-header-top > .details > .phone, .contact-header-top > .details > .mobile, .contact-header-top > .details > .email {
@@ -146,8 +174,25 @@
     font-weight: 300; }
   .contact-header-top > .details > .phone > .fas, .contact-header-top > .details .mobile > .fas, .contact-header-top > .details .email > .fas {
     margin-right: 5px; }
-  .contact-header-top > .social-media > .link {
-    margin-left: 10px; }
+  .contact-header-top > .social-media {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .contact-header-top > .social-media > .link {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      margin-left: 10px; }
+    .contact-header-top > .social-media > .link > .fab {
+      font-size: 1.2em;
+      color: #fff; }
 
 html, body {
   font-family: "Lato", sans-serif !important;
