@@ -1,0 +1,98 @@
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin align-items($position, $important: false)
+{
+	@if $important {
+		align-items: $position !important;
+		-moz-align-items: $position !important;
+		-webkit-align-items: $position !important;
+	}
+
+	@else {
+		align-items: $position;
+		-moz-align-items: $position;
+		-webkit-align-items: $position;
+	}
+}
+
+@mixin flex-direction($position, $important: false)
+{
+	@if $important {
+		flex-direction: $position !important;
+		-moz-flex-direction: $position !important;
+		-webkit-flex-directions: $position !important;
+	}
+	@else {
+		flex-direction: $position;
+		-moz-flex-direction: $position;
+		-webkit-flex-directions: $position;
+	}
+}
+
+@mixin justify-content($position, $important: false)
+{
+	@if $important {
+		justify-content:$position !important;
+		-moz-justify-content:$position  !important;
+		-webkit-justify-content:$position  !important;
+	}
+		
+	@else {
+		justify-content:$position;
+		-moz-justify-content:$position;
+		-webkit-justify-content:$position;
+	}
+}
+
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+
+@mixin height-calc($val)
+{
+	height: calc(#{$val});
+	height: -moz-calc(#{$val});
+	height: -o-calc(#{$val});
+	height: -webkit-calc(#{$val});
+} 
+
+@mixin transition($transition...) {
+	-moz-transition:    $transition;
+	-o-transition:      $transition;
+	-webkit-transition: $transition;
+	transition:         $transition;
+}
+
+@mixin transform($transforms...) {
+	-moz-transform: $transforms;
+		-o-transform: $transforms;
+	 -ms-transform: $transforms;
+-webkit-transform: $transforms;
+			 transform: $transforms;
+}
+
+@mixin no-select(){
+	-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+			-khtml-user-select: none; /* Konqueror HTML */
+				-moz-user-select: none; /* Firefox */
+				-ms-user-select: none; /* Internet Explorer/Edge */
+						user-select: none; /* Non-prefixed version, currently
+																	supported by Chrome and Opera */
+}

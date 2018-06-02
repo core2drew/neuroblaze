@@ -1,0 +1,11 @@
+@import "mixins";
+@import "helpers";
+@import "page";
+@import "navigation";
+@import "contact";
+
+html, body {
+  font-family: "Lato", sans-serif !important;
+  font-size: 16px;
+}
+

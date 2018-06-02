@@ -1,0 +1,17 @@
+{
+  "name": "neuroblaze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-scss":"node-sass --include-path scss scss/main.scss main.css",
+    "watch-scss": "nodemon -e scss -x npm run build-scss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
+}

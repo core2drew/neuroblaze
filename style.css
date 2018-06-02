@@ -1,0 +1,13 @@
+/*
+ Theme Name:   Neuroblaze-theme
+Theme URI: https://www.webpsilon.com/en/wpthemes
+ Description:  Draco Child Theme
+ Author:       Drew
+ Template:     draco
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  draco
+*/
+@import "draco.css";
+@import "main.css";

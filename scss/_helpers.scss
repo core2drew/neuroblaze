@@ -1,0 +1,139 @@
+@import 'mixins';
+
+._initial-maxheight {
+  max-height: initial !important;
+}
+
+._initial-maxwidth {
+  max-width: initial !important;
+}
+
+._initial-height {
+  height: initial !important;
+}
+
+._initial-width {
+  width: initial !important;
+}
+
+._padding-leftless {
+  padding-left: 0 !important;
+}
+
+._padding-rightless {
+  padding-right: 0 !important;
+}
+
+._margin-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media screen and (min-width: 1408px) {
+  ._flex-content-baseline-fullhd {
+    @include justify-content(baseline);
+  }
+}
+
+@media screen and (max-width: 1407px) {
+  ._flex-content-baseline-widescreen {
+    @include justify-content(baseline);
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  ._flex-content-baseline-desktop {
+    @include justify-content(baseline);
+  }
+}
+
+
+@media screen and (max-width: 1023px) {
+  ._margin-auto-tablet {
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  ._margin-less-tablet {
+    margin: 0 !important;
+  }
+
+  ._margin-leftless-tablet {
+    margin-left: 0 !important;
+  }
+
+  ._margin-rightless-tablet {
+    margin-right: 0 !important;
+  }
+
+  ._margin-bottomless-tablet {
+    margin-bottom: 0 !important;
+  }
+
+  ._margin-topless-tablet {
+    margin-top: 0 !important;
+  }
+
+  ._flex-wrap-tablet {
+    @include flex-wrap(wrap);
+  }
+
+  ._flex-wrap-tablet {
+    @include flex-wrap(wrap);
+  }
+
+  ._flex-column-reverse-tablet {
+    @include flex-direction(column-reverse);
+  }
+
+  ._flex-content-center-tablet {
+    @include justify-content(center);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  ._height-initial-mobile {
+    height: initial !important;
+  }
+
+  ._margin-less-mobile {
+    margin: 0 !important;
+  }
+
+  ._margin-leftless-mobile {
+    margin-left: 0 !important;
+  }
+
+  ._margin-rightless-mobile {
+    margin-right: 0 !important;
+  }
+
+  ._margin-bottomless-mobile {
+    margin-bottom: 0 !important;
+  }
+
+  ._margin-topless-mobile {
+    margin-top: 0 !important;
+  }
+
+  ._flex-column-mobile {
+    @include flex-direction(column, true);
+  }
+
+  ._flex-column-reverse-mobile {
+    @include flex-direction(column-reverse);
+  }
+
+  ._flex-content-center-mobile {
+    @include justify-content(center);
+  }
+
+  ._flex-items-center-mobile {
+    @include align-items(center, true);
+  }
+
+  ._flex-wrap-mobile {
+    @include flex-wrap(wrap);
+  }
+}

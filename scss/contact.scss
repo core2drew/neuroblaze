@@ -1,0 +1,27 @@
+@import 'theme';
+
+.contact-header-top {
+  @include flexbox();
+  @include justify-content(space-between);
+  padding: 7px 135px;
+  background-color: $contact-header-top-bg-color;
+  > .details {
+    > .phone, > .mobile {
+      margin-right: 15px;
+    }
+
+    > .phone, > .mobile, > .email {
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    > .phone > .fas, .mobile > .fas, .email > .fas {
+      margin-right: 5px;
+    }
+  }
+  > .social-media {
+    > .link {
+      margin-left: 10px;
+    }
+  }
+}

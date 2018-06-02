@@ -1,0 +1,14 @@
+.header-menu-top {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+  position: static;
+  padding: 0 135px;
+  > .logo {
+    margin: 0;
+  }
+
+  > .mobile-bar {
+    display:none;
+  }
+}
