@@ -1,3 +1,5 @@
+@import "theme";
+
 #page {
   > .header {
     @include flexbox();
@@ -7,7 +9,29 @@
     background-size: cover;
     
     > .info {
+      @include flex(initial);
       position:static;
+      width: 100%;
+      padding: 0 135px;
+      text-align: left;
+    }
+
+    > .info > .title {
+      font-weight: 300;
+      font-size: 3.5em;
+    }
+
+    > .info > .description {
+      font-size: 1.5em;
+      width: 580px;
+      font-weight: 100;
+    }
+
+    > .info > .underline {
+      display: block;
+      height: 3px;
+      width: 70px;
+      background-color: $primary-yellow;
     }
   }
 }

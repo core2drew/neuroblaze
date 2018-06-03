@@ -119,7 +119,25 @@
   height: 100vh;
   background-size: cover; }
   #page > .header > .info {
-    position: static; }
+    flex: initial;
+    -moz-flex: initial;
+    -webkit-flex: initial;
+    position: static;
+    width: 100%;
+    padding: 0 135px;
+    text-align: left; }
+  #page > .header > .info > .title {
+    font-weight: 300;
+    font-size: 3.5em; }
+  #page > .header > .info > .description {
+    font-size: 1.5em;
+    width: 580px;
+    font-weight: 100; }
+  #page > .header > .info > .underline {
+    display: block;
+    height: 3px;
+    width: 70px;
+    background-color: #dcba1c; }
 
 .header-menu-top {
   display: -webkit-box;

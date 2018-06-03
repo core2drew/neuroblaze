@@ -21,6 +21,19 @@
 	}
 }
 
+@mixin flex($grow:0, $wrap:0, $basis:0) {
+	@if $grow == initial {
+		flex: initial;
+		-moz-flex: initial;
+		-webkit-flex: initial;
+	}
+	@else {
+		flex: $grow $wrap $basis;
+		-moz-flex: $grow $wrap $basis;
+		-webkit-flex: $grow $wrap $basis;
+	}
+}
+
 @mixin flex-direction($position, $important: false)
 {
 	@if $important {
