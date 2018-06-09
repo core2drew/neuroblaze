@@ -5,8 +5,8 @@
   <nav class="site-links">
     <a class="link" href="#">About</a>
     <a class="link" href="#">Benefits</a>
-    <a class="link" href="#">Blazing Stories</a>
+    <a class="link" href="#">Components</a>
+    <a class="link" href="#">Blazing Experience</a>
     <a class="link" href="#">Contact Us</a>
   </nav>
-  <?php get_template_part( 'template-parts/navigation/navigation', 'mobile' ); ?>
 </div>

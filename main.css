@@ -139,6 +139,55 @@
     width: 70px;
     background-color: #dcba1c; }
 
+#AboutUs {
+  padding: 45px 0; }
+  #AboutUs > .title {
+    color: #08afe4;
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center; }
+    #AboutUs > .title > .underline {
+      display: block;
+      background-color: #dcba1c;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px; }
+  #AboutUs > .description {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 300; }
+
+#Benefits {
+  background: #007cba;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #007cba 0%, #00afaa 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #007cba 0%, #00afaa 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #007cba 0%, #00afaa 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007cba', endColorstr='#00afaa',GradientType=0 );
+  /* IE6-9 */ }
+  #Benefits > .title {
+    color: #08afe4;
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center; }
+    #Benefits > .title > .underline {
+      display: block;
+      background-color: #dcba1c;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px; }
+  #Benefits > .benefits {
+    padding: 0 60px; }
+    #Benefits > .benefits > .row > .item {
+      color: #fff; }
+    #Benefits > .benefits > .row > .item > .title {
+      text-align: center; }
+
 .header-menu-top {
   display: -webkit-box;
   display: -moz-box;
@@ -159,11 +208,12 @@
     margin: 0;
     padding: 0;
     border: 0;
-    margin-left: 135px; }
+    margin-left: 135px;
+    height: 60px; }
   .header-menu-top > .site-links {
     margin-right: 135px; }
     .header-menu-top > .site-links > .link {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: 300;
       color: #fff; }
     .header-menu-top > .site-links > .link:nth-last-child(n + 2) {

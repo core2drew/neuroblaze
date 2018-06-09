@@ -1,0 +1,26 @@
+#Benefits {
+  @include primary-gradient();
+  > .title {
+    color: $primary-blue;
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    > .underline {
+      display: block;
+      background-color: $primary-yellow;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+  > .benefits {
+    padding: 0 60px;
+    > .row > .item {
+      color: #fff;
+    }
+    > .row > .item > .title{
+      text-align: center;
+    }
+  }
+}
