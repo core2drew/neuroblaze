@@ -1,33 +1,28 @@
-@import "theme";
+#Header {
+  @include flexbox();
+  @include align-items(center);
+  background-image: url('../neuroblaze/assets/img/header.jpg');
+  height: 100vh;
+  background-size: cover;
 
-#page {
-  > .header {
-    @include flexbox();
-    @include align-items(center);
-    background-image: url('../neuroblaze/assets/img/header.jpg');
-    height: 100vh;
-    background-size: cover;
-    
-    > .info {
-      @include flex(initial);
-      position:static;
-      width: 100%;
-      padding: 0 135px;
-      text-align: left;
+  > .row {
+    width: 100%;
+    > .col-md-11 {
+      color: #fff;
     }
 
-    > .info > .title {
+    > .col-md-11 > .title {
       font-weight: 300;
       font-size: 3.5em;
     }
 
-    > .info > .description {
+    > .col-md-11 > .description {
       font-size: 1.5em;
-      width: 580px;
+      width: 640px;
       font-weight: 100;
     }
 
-    > .info > .underline {
+    > .col-md-11 > .underline {
       display: block;
       height: 3px;
       width: 70px;

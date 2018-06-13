@@ -1,35 +1,79 @@
 @import 'theme';
 
-.contact-header-top {
-  @include flexbox();
-  @include justify-content(space-between);
-  padding: 7px 135px;
+#ContactDetailsTop {
+  padding-top: 7px;
+  padding-bottom: 7px;
   background-color: $primary-blue;
   color: #fff;
-  > .details {
-    > .phone, > .mobile {
-      margin-right: 15px;
-    }
+  > .row {
+    > .col {
+      > .row > .details > .phone, 
+      > .row > .details > .mobile {
+        margin-right: 15px;
+      }
 
-    > .phone, > .mobile, > .email {
-      font-size: 1em;
-      font-weight: 300;
-    }
+      > .row > .details > .phone, 
+      > .row > .details > .mobile, 
+      > .row > .details > .email {
+        font-size: 1em;
+        font-weight: 300;
+      }
 
-    > .phone > .fas, .mobile > .fas, .email > .fas {
-      margin-right: 5px;
+      > .row > .details > .phone > .fas, 
+      > .row > .details > .mobile > .fas, 
+      > .row > .details >.email > .fas {
+          margin-right: 5px;
+      }
+
+      > .row > .social-media {
+        @include flexbox();
+        @include justify-content(flex-end);
+      }
+
+      > .row > .social-media > .link {
+        @include flexbox();
+        @include align-items(center);
+        margin-left: 10px;
+      }
+
+      > .row > .social-media > .link > .fab {
+        font-size: 1.2em;
+        color: #fff;
+      }
     }
   }
-  > .social-media {
-    @include flexbox();
-    > .link {
-      @include flexbox();
-      @include align-items(center);
-      margin-left: 10px;
-    }
+}
 
-    > .link > .fab {
-      font-size: 1.2em;
+#ContactUsForm {
+  background-image: url('../neuroblaze/assets/img/contact.jpg');
+  background-size: cover;
+  padding: 70px 0 30px;
+
+  > .row {
+    > .message {
+      color: #fff;
+      font-weight: 300;
+    }
+    > .col > form {
+      text-align: center;
+    }
+    > .col > form > .form-group > .name,
+    > .col > form > .form-group > .email,
+    > .col > form > .form-group > .mobile,
+    > .col > form > .form-group > .message {
+      font-weight: 300;
+    }
+    > .col > form > .form-group > .message {
+      resize: none;
+    }
+    > .col > form > .submit {
+      padding: 12px 100px;
+      background-color: $primary-yellow;
+      text-transform: uppercase;
+      border: 0;
+      border-radius: 7px;
+    }
+    > .footer {
       color: #fff;
     }
   }

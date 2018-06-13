@@ -106,7 +106,39 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
 
-#page > .header {
+#NavbarTop {
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  display: block; }
+  #NavbarTop > .row > .col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-end;
+    -moz-align-items: flex-end;
+    -webkit-align-items: flex-end; }
+  #NavbarTop > .row > .col > .navbar-brand {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  #NavbarTop > .row > .col > img {
+    height: 50px; }
+  #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #fff;
+    padding: 0;
+    line-height: 1; }
+  #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2) {
+    margin-right: 50px; }
+  #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:hover {
+    color: #ff973b; }
+
+#Header {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -118,44 +150,39 @@
   background-image: url("../neuroblaze/assets/img/header.jpg");
   height: 100vh;
   background-size: cover; }
-  #page > .header > .info {
-    flex: initial;
-    -moz-flex: initial;
-    -webkit-flex: initial;
-    position: static;
-    width: 100%;
-    padding: 0 135px;
-    text-align: left; }
-  #page > .header > .info > .title {
-    font-weight: 300;
-    font-size: 3.5em; }
-  #page > .header > .info > .description {
-    font-size: 1.5em;
-    width: 580px;
-    font-weight: 100; }
-  #page > .header > .info > .underline {
-    display: block;
-    height: 3px;
-    width: 70px;
-    background-color: #dcba1c; }
+  #Header > .row {
+    width: 100%; }
+    #Header > .row > .col-md-11 {
+      color: #fff; }
+    #Header > .row > .col-md-11 > .title {
+      font-weight: 300;
+      font-size: 3.5em; }
+    #Header > .row > .col-md-11 > .description {
+      font-size: 1.5em;
+      width: 640px;
+      font-weight: 100; }
+    #Header > .row > .col-md-11 > .underline {
+      display: block;
+      height: 3px;
+      width: 70px;
+      background-color: #ff973b; }
 
 #AboutUs {
-  padding: 45px 0; }
-  #AboutUs > .title {
+  padding: 50px 0; }
+  #AboutUs > .row > .mission {
+    margin-right: 30px; }
+  #AboutUs > .row > .section > .title {
     color: #08afe4;
-    font-size: 3em;
-    margin: 25px 0;
-    text-align: center; }
-    #AboutUs > .title > .underline {
-      display: block;
-      background-color: #dcba1c;
-      width: 70px;
-      height: 3px;
-      margin: auto;
-      margin-top: 15px; }
-  #AboutUs > .description {
-    text-align: center;
-    font-size: 1.4em;
+    font-size: 2.5em;
+    margin-bottom: 20px; }
+  #AboutUs > .row > .section > .title > .underline {
+    display: block;
+    background-color: #ff973b;
+    width: 70px;
+    height: 3px;
+    margin-top: 15px; }
+  #AboutUs > .row > .section > .description {
+    font-size: 1.2em;
     font-weight: 300; }
 
 #Benefits {
@@ -168,99 +195,134 @@
   background: linear-gradient(to bottom, #007cba 0%, #00afaa 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007cba', endColorstr='#00afaa',GradientType=0 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+  padding: 50px 0; }
   #Benefits > .title {
-    color: #08afe4;
-    font-size: 3em;
-    margin: 25px 0;
-    text-align: center; }
-    #Benefits > .title > .underline {
+    margin-bottom: 30px; }
+    #Benefits > .title > .h1 {
+      color: #fff;
+      font-size: 3em;
+      text-align: center; }
+    #Benefits > .title > .h1 > .underline {
       display: block;
-      background-color: #dcba1c;
+      background-color: #ff973b;
       width: 70px;
       height: 3px;
       margin: auto;
       margin-top: 15px; }
   #Benefits > .benefits {
     padding: 0 60px; }
-    #Benefits > .benefits > .row > .item {
+    #Benefits > .benefits > .col > .row > .item {
       color: #fff; }
-    #Benefits > .benefits > .row > .item > .title {
+    #Benefits > .benefits > .col > .row > .item > .title {
       text-align: center; }
-
-.header-menu-top {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  justify-content: space-between;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  position: absolute;
-  z-index: 11;
-  width: 100%;
-  margin-top: 25px; }
-  .header-menu-top > .logo {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    margin-left: 135px;
-    height: 60px; }
-  .header-menu-top > .site-links {
-    margin-right: 135px; }
-    .header-menu-top > .site-links > .link {
+    #Benefits > .benefits > .col > .row:nth-child(1) {
+      margin-bottom: 30px; }
+    #Benefits > .benefits > .col > .row > .item > .description {
       font-size: 1.3em;
-      font-weight: 300;
-      color: #fff; }
-    .header-menu-top > .site-links > .link:nth-last-child(n + 2) {
-      margin-right: 50px; }
-    .header-menu-top > .site-links > .link:hover {
-      color: #dcba1c; }
-  .header-menu-top > .mobile-bar {
-    display: none; }
+      text-align: center;
+      font-weight: 300; }
 
-.contact-header-top {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  padding: 7px 135px;
+#Components > .title {
+  color: #08afe4;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px; }
+  #Components > .title > .underline {
+    display: block;
+    background-color: #ff973b;
+    width: 70px;
+    height: 3px;
+    margin: auto;
+    margin-top: 15px; }
+
+#Testimonials {
+  padding: 50px 0; }
+  #Testimonials > .title {
+    color: #08afe4;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px; }
+    #Testimonials > .title > .underline {
+      display: block;
+      background-color: #ff973b;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px; }
+  #Testimonials > .row > .col > .container-fluid > .card-group > .card {
+    box-shadow: 0px 0px 15px -3px #000;
+    padding: 20px; }
+  #Testimonials > .row > .col > .container-fluid > .card-group > .card > .card-img-top {
+    border-radius: 500px;
+    width: 160px; }
+  #Testimonials > .row > .col > .container-fluid > .card-group > .card:nth-last-child(n + 2) {
+    margin-right: 30px; }
+
+#ContactDetailsTop {
+  padding-top: 7px;
+  padding-bottom: 7px;
   background-color: #08afe4;
   color: #fff; }
-  .contact-header-top > .details > .phone, .contact-header-top > .details > .mobile {
+  #ContactDetailsTop > .row > .col > .row > .details > .phone,
+  #ContactDetailsTop > .row > .col > .row > .details > .mobile {
     margin-right: 15px; }
-  .contact-header-top > .details > .phone, .contact-header-top > .details > .mobile, .contact-header-top > .details > .email {
+  #ContactDetailsTop > .row > .col > .row > .details > .phone,
+  #ContactDetailsTop > .row > .col > .row > .details > .mobile,
+  #ContactDetailsTop > .row > .col > .row > .details > .email {
     font-size: 1em;
     font-weight: 300; }
-  .contact-header-top > .details > .phone > .fas, .contact-header-top > .details .mobile > .fas, .contact-header-top > .details .email > .fas {
+  #ContactDetailsTop > .row > .col > .row > .details > .phone > .fas,
+  #ContactDetailsTop > .row > .col > .row > .details > .mobile > .fas,
+  #ContactDetailsTop > .row > .col > .row > .details > .email > .fas {
     margin-right: 5px; }
-  .contact-header-top > .social-media {
+  #ContactDetailsTop > .row > .col > .row > .social-media {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; }
-    .contact-header-top > .social-media > .link {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      align-items: center;
-      -moz-align-items: center;
-      -webkit-align-items: center;
-      margin-left: 10px; }
-    .contact-header-top > .social-media > .link > .fab {
-      font-size: 1.2em;
-      color: #fff; }
+    display: flex;
+    justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end; }
+  #ContactDetailsTop > .row > .col > .row > .social-media > .link {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    margin-left: 10px; }
+  #ContactDetailsTop > .row > .col > .row > .social-media > .link > .fab {
+    font-size: 1.2em;
+    color: #fff; }
+
+#ContactUsForm {
+  background-image: url("../neuroblaze/assets/img/contact.jpg");
+  background-size: cover;
+  padding: 70px 0 30px; }
+  #ContactUsForm > .row > .message {
+    color: #fff;
+    font-weight: 300; }
+  #ContactUsForm > .row > .col > form {
+    text-align: center; }
+  #ContactUsForm > .row > .col > form > .form-group > .name,
+  #ContactUsForm > .row > .col > form > .form-group > .email,
+  #ContactUsForm > .row > .col > form > .form-group > .mobile,
+  #ContactUsForm > .row > .col > form > .form-group > .message {
+    font-weight: 300; }
+  #ContactUsForm > .row > .col > form > .form-group > .message {
+    resize: none; }
+  #ContactUsForm > .row > .col > form > .submit {
+    padding: 12px 100px;
+    background-color: #ff973b;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 7px; }
+  #ContactUsForm > .row > .footer {
+    color: #fff; }
 
 html, body {
   font-family: "Lato", sans-serif !important;

@@ -1,11 +1,15 @@
 #Benefits {
   @include primary-gradient();
+  padding: 50px 0;
+
   > .title {
-    color: $primary-blue;
-    font-size: 3em;
-    margin: 25px 0;
-    text-align: center;
-    > .underline {
+    margin-bottom: 30px;
+    > .h1 {
+      color: #fff;
+      font-size: 3em;
+      text-align: center;
+    }
+    > .h1 > .underline {
       display: block;
       background-color: $primary-yellow;
       width: 70px;
@@ -14,13 +18,22 @@
       margin-top: 15px;
     }
   }
+  
   > .benefits {
     padding: 0 60px;
-    > .row > .item {
+    > .col > .row > .item {
       color: #fff;
     }
-    > .row > .item > .title{
+    > .col > .row > .item > .title{
       text-align: center;
+    }
+    > .col > .row:nth-child(1) {
+      margin-bottom: 30px;
+    }
+    > .col > .row > .item > .description {
+      font-size: 1.3em;
+      text-align: center;
+      font-weight: 300;
     }
   }
 }

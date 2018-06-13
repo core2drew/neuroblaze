@@ -1,38 +1,41 @@
 @import "theme";
 
-.header-menu-top {
-  @include flexbox();
-  @include align-items(center);
-  @include justify-content(space-between);
+#NavbarTop {
+  margin-top: 10px;
   position: absolute;
-  z-index: 11;
   width: 100%;
-  margin-top: 25px;
-  > .logo {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    margin-left: 135px;
-    height: 60px;
-  }
+  z-index: 1;
+  display: block;
+  > .row {
+    > .col {
+      @include flexbox();
+      @include align-items(flex-end);
+    }
+    
+    > .col > .navbar-brand {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
 
-  > .site-links {
-    margin-right: 135px;
-    > .link {
-      font-size: 1.3em;
+    > .col > img {
+      height: 50px;
+    }
+      
+    > .col > .collapse  > .navbar-nav > .nav-link {
+      font-size: 1.1em;
       font-weight: 300;
       color: #fff;
+      padding: 0;
+      line-height: 1;
     }
-    > .link:nth-last-child(n + 2) {
+     
+    > .col > .collapse  > .navbar-nav > .nav-link:nth-last-child(n + 2) {
       margin-right: 50px;
     }
-
-    > .link:hover {
+  
+    > .col > .collapse  > .navbar-nav > .nav-link:hover {
       color: $primary-yellow;
     }
-  }
-
-  > .mobile-bar {
-    display:none;
   }
 }

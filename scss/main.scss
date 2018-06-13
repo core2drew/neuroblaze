@@ -1,9 +1,12 @@
 @import "mixins";
+@import "theme";
 @import "helpers";
+@import "navigation";
 @import "header";
 @import "about";
 @import "benefits";
-@import "navigation";
+@import "components";
+@import "testimonials";
 @import "contact";
 
 html, body {
