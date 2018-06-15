@@ -1,12 +1,12 @@
 <div id="Benefits" class="container-fluid">
-  <div class="row title no-gutters justify-content-center">
+  <div class="title">
     <h1 class="h1">
       Benefits
       <span class="underline"></span>
     </h1>
   </div>
   <div class="benefits row no-gutters justify-content-center">
-    <div class="col col-md-11">
+    <div class="col col-md-12">
       <div class="row">
         <div class="item col-sm">
           <div class="title">

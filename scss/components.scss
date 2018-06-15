@@ -1,6 +1,8 @@
 #Components {
+  @include primary-gradient-reverse();
+  padding: 0 0 50px;
   > .title {
-    color: $primary-blue;
+    color: #fff;
     font-size: 3em;
     text-align: center;
     margin-bottom: 30px;
@@ -11,6 +13,23 @@
       height: 3px;
       margin: auto;
       margin-top: 15px;
+    }
+  }
+  > .components {
+    padding: 0 60px;
+    margin-bottom: 40px;
+    > .item {
+      @include flexbox();
+      @include align-items(center);
+    }
+    > .item > img {
+      width: 100px;
+      margin-right: 10px;
+    }
+    > .item > .description {
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
     }
   }
 }

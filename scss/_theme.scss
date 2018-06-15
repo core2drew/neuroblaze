@@ -9,3 +9,11 @@ $primary-yellow: #ff973b;
   background: linear-gradient(to bottom, #007cba 0%,#00afaa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007cba', endColorstr='#00afaa',GradientType=0 ); /* IE6-9 */
 }
+
+@mixin primary-gradient-reverse() {
+  background: #00afaa; /* Old browsers */
+  background: -moz-linear-gradient(top, #00afaa 0%, #007cba 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00afaa 0%,#007cba 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00afaa 0%,#007cba 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afaa', endColorstr='#007cba',GradientType=0 ); /* IE6-9 */
+}

@@ -223,18 +223,49 @@
       text-align: center;
       font-weight: 300; }
 
-#Components > .title {
-  color: #08afe4;
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 30px; }
-  #Components > .title > .underline {
-    display: block;
-    background-color: #ff973b;
-    width: 70px;
-    height: 3px;
-    margin: auto;
-    margin-top: 15px; }
+#Components {
+  background: #00afaa;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00afaa 0%, #007cba 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00afaa 0%, #007cba 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00afaa 0%, #007cba 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afaa', endColorstr='#007cba',GradientType=0 );
+  /* IE6-9 */
+  padding: 0 0 50px; }
+  #Components > .title {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px; }
+    #Components > .title > .underline {
+      display: block;
+      background-color: #ff973b;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px; }
+  #Components > .components {
+    padding: 0 60px;
+    margin-bottom: 40px; }
+    #Components > .components > .item {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      -moz-align-items: center;
+      -webkit-align-items: center; }
+    #Components > .components > .item > img {
+      width: 100px;
+      margin-right: 10px; }
+    #Components > .components > .item > .description {
+      color: #fff;
+      font-size: 14px;
+      margin: 0; }
 
 #Testimonials {
   padding: 50px 0; }
