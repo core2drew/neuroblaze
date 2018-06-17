@@ -18,14 +18,14 @@
               </p>
 
             </div>
-            <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/testi/sample.jpg" ?> alt="Card image cap">
+            <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/testi/sample.jpg" ?> alt="Card image cap">
           </div>
           <div class="card align-items-center">
             <div class="card-body p-0 mb-3">
               <h5 class="card-title h3 text-center">John Doe</h5>
               <p class="card-text lead">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
-            <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/testi/sample.jpg" ?> alt="Card image cap">
+            <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/testi/sample.jpg" ?> alt="Card image cap">
           </div>
           <div class="card align-items-center">
             <div class="card-body p-0 mb-3">
@@ -35,7 +35,7 @@
                 This card has even longer content than the first to show that equal height action.
               </p>
             </div>
-            <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/testi/sample.jpg" ?> alt="Card image cap">
+            <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/testi/sample.jpg" ?> alt="Card image cap">
           </div>
         </div>
       </div>

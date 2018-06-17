@@ -15,18 +15,23 @@
       margin-top: 15px;
     }
   }
-  > .components {
-    padding: 0 60px;
-    margin-bottom: 40px;
-    > .item {
+  > .row {
+    > .col > .components {
+      padding: 0 60px;
+      margin-bottom: 40px;
+    }
+
+    > .col > .components > .item {
       @include flexbox();
       @include align-items(center);
     }
-    > .item > img {
+
+    > .col > .components > .item > img {
       width: 100px;
       margin-right: 10px;
     }
-    > .item > .description {
+
+    > .col > .components > .item > .description {
       color: #fff;
       font-size: 14px;
       margin: 0;

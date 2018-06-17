@@ -34,3 +34,4 @@ function draco_custom_css_output() {
   }
 }
 add_action( 'wp_head', 'draco_custom_css_output');
+remove_action( 'wp_head', 'draco_custom_css_output');

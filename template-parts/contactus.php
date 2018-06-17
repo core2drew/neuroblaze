@@ -28,10 +28,4 @@
       </form>
     </div>
   </div>
-  <div class="row justify-content-center no-gutters text-center mt-5">
-    <small class="footer">
-      Copyright © 2018 NueroBlaze. <br/>
-      All rights reserved.
-    </small>
-  </div>
 </div>

@@ -6,11 +6,11 @@
     </h1>
   </div>
   <div class="benefits row no-gutters justify-content-center">
-    <div class="col col-md-12">
+    <div class="col col-md-11">
       <div class="row">
         <div class="item col-sm">
           <div class="title">
-            <img alt="energy" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/energy.png" ?> />
+            <img alt="energy" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/energy.png" ?> />
             <h2>Energy</h2>
           </div>
           <p class="description">
@@ -19,7 +19,7 @@
         </div>
         <div class="item col-sm">
           <div class="title">
-            <img alt="eye" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/eye.png" ?> />
+            <img alt="eye" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/eye.png" ?> />
             <h2>Good Eyesight</h2>
           </div>
           <p class="description">
@@ -28,7 +28,7 @@
         </div>
         <div class="item col-sm">
           <div class="title">
-            <img alt="good sleep" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/good-sleep.png" ?> />
+            <img alt="good sleep" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/good-sleep.png" ?> />
             <h2>Good Sleep</h2>
           </div>
           <p class="description">
@@ -37,7 +37,7 @@
         </div>
         <div class="item col-sm">
           <div class="title">
-            <img alt="happy hormone" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/happy-hormone.png" ?> />
+            <img alt="happy hormone" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/happy-hormone.png" ?> />
             <h2>Happy Hormone</h2>
           </div>
           <p class="description">
@@ -48,7 +48,7 @@
       <div class="row">
         <div class="item col-sm">
           <div class="title">
-            <img alt="head-bulb" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/head-bulb.png" ?> />
+            <img alt="head-bulb" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/head-bulb.png" ?> />
             <h2>Mental Alertness</h2>
           </div>
           <p class="description">
@@ -57,7 +57,7 @@
         </div>
         <div class="item col-sm">
           <div class="title">
-            <img alt="healthy heart" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/healthy-heart.png" ?> />
+            <img alt="healthy heart" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/healthy-heart.png" ?> />
             <h2>Health Heart</h2>
           </div>
           <p class="description">
@@ -66,7 +66,7 @@
         </div>
         <div class="item col-sm">
           <div class="title">
-            <img alt="wellness" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/wellness.png" ?> />
+            <img alt="wellness" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/wellness.png" ?> />
             <h2>Wellness</h2>
           </div>
           <p class="description">
@@ -75,7 +75,7 @@
         </div>
         <div class="item col-sm">
           <div class="title">
-            <img alt="immunity" src=<?php echo get_stylesheet_directory_uri() . "/assets/benefits/immunity.png" ?> />
+            <img alt="immunity" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/immunity.png" ?> />
             <h2>Immunity</h2>
           </div>
           <p class="description">
