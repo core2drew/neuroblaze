@@ -7,21 +7,21 @@
   </div>
   <div class="row justify-content-center no-gutters">
     <div class="col col-md-5">
-      <form>
+      <form autocomplete="off">
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg name" placeholder="Enter your fullname">
+          <input type="text" class="form-control form-control-lg name" placeholder="Enter your fullname" autocomplete="off">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg email" placeholder="Enter your e-mail">
+          <input type="text" class="form-control form-control-lg email" placeholder="Enter your e-mail"  autocomplete="faofflse">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg mobile" placeholder="Enter your mobile number">
+          <input type="text" class="form-control form-control-lg mobile" placeholder="Enter your mobile number"  autocomplete="off">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <textarea class="form-control form-control-lg message" rows="7" placeholder="Enter your message"></textarea>
+          <textarea class="form-control form-control-lg message" rows="7" placeholder="Enter your message"  autocomplete="off"></textarea>
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <button type="submit" class="btn btn-primary submit">Submit</button>

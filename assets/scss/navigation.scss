@@ -1,4 +1,12 @@
-@import "theme";
+@include keyframe(fixednav) {
+  0% {
+    @include transform(translateY(-75px));
+  }
+
+  100% {
+    @include transform(translateY(70px));
+  }
+}
 
 #NavbarTop {
   margin-top: 10px;
@@ -6,10 +14,20 @@
   width: 100%;
   z-index: 1;
   display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  &.fixed {
+    top: 0;
+    position: fixed;
+    margin-top: 0;
+    background-color: $primary-blue;
+  }
+
   > .row {
     > .col {
       @include flexbox();
-      @include align-items(flex-end);
+      @include align-items(center);
     }
     
     > .col > .navbar-brand {

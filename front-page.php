@@ -14,6 +14,7 @@ get_header(); ?>
 <div class="warpper">
 	<main id="main" class="site-main" role="main">  
 		<?php
+			get_template_part( 'template-parts/header');
 			get_template_part( 'template-parts/about-us');
 			get_template_part( 'template-parts/benefits'); 
 			get_template_part( 'template-parts/components');

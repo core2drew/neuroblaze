@@ -3,7 +3,7 @@
     Components
     <span class="underline"></span>
   </h1>
-  <div class="row no-gutters">
+  <div class="row no-gutters justify-content-center">
     <div class="col col-md-11">
       <div class="components row justify-content-center">
         <div class="col-md-4 item">

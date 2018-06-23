@@ -106,21 +106,84 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; } }
 
+@-webkit-keyframes $animation_name {
+  0% {
+    -moz-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -webkit-transform: translateY(-75px);
+    transform: translateY(-75px); }
+  100% {
+    -moz-transform: translateY(70px);
+    -o-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    -moz-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -webkit-transform: translateY(-75px);
+    transform: translateY(-75px); }
+  100% {
+    -moz-transform: translateY(70px);
+    -o-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px); } }
+
+@-o-keyframes $animation_name {
+  0% {
+    -moz-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -webkit-transform: translateY(-75px);
+    transform: translateY(-75px); }
+  100% {
+    -moz-transform: translateY(70px);
+    -o-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px); } }
+
+@keyframes $animation_name {
+  0% {
+    -moz-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -webkit-transform: translateY(-75px);
+    transform: translateY(-75px); }
+  100% {
+    -moz-transform: translateY(70px);
+    -o-transform: translateY(70px);
+    -ms-transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px); } }
+
 #NavbarTop {
   margin-top: 10px;
   position: absolute;
   width: 100%;
   z-index: 1;
-  display: block; }
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  #NavbarTop.fixed {
+    top: 0;
+    position: fixed;
+    margin-top: 0;
+    background-color: #08afe4; }
   #NavbarTop > .row > .col {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: flex-end;
-    -moz-align-items: flex-end;
-    -webkit-align-items: flex-end; }
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center; }
   #NavbarTop > .row > .col > .navbar-brand {
     margin: 0;
     padding: 0;
@@ -136,7 +199,7 @@
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2) {
     margin-right: 50px; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:hover {
-    color: #ff973b; }
+    color: #dcba1c; }
 
 #Header {
   display: -webkit-box;
@@ -165,25 +228,54 @@
       display: block;
       height: 3px;
       width: 70px;
-      background-color: #ff973b; }
+      background-color: #dcba1c; }
 
 #AboutUs {
   padding: 50px 0; }
+  #AboutUs > .title {
+    color: #08afe4;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 60px; }
+    #AboutUs > .title > .underline {
+      display: block;
+      background-color: #dcba1c;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px; }
   #AboutUs > .row > .mission {
     margin-right: 30px; }
   #AboutUs > .row > .section > .title {
-    color: #08afe4;
+    color: #dcba1c;
     font-size: 2.5em;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   #AboutUs > .row > .section > .title > .underline {
-    display: block;
-    background-color: #ff973b;
+    display: none;
+    background-color: #dcba1c;
     width: 70px;
     height: 3px;
     margin-top: 15px; }
   #AboutUs > .row > .section > .description {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300; }
+  #AboutUs > .row > #CoreValues > .title {
+    margin-bottom: 30px;
+    text-align: center; }
+  #AboutUs > .row > #CoreValues > .row > .col > .card {
+    border-radius: 10px;
+    border: 2px solid #dcba1c;
+    height: 100%; }
+  #AboutUs > .row > #CoreValues > .row > .col > .card > .card-img-top {
+    width: 130px;
+    margin: auto;
+    margin-top: 25px; }
+  #AboutUs > .row > #CoreValues > .row > .col > .card > .card-body {
+    text-align: center; }
+  #AboutUs > .row > #CoreValues > .row > .col > .card > .card-body > .card-title {
+    color: #08afe4;
+    text-transform: uppercase;
+    font-size: 1em; }
 
 #Benefits {
   background: #007cba;
@@ -205,7 +297,7 @@
       text-align: center; }
     #Benefits > .title > .h1 > .underline {
       display: block;
-      background-color: #ff973b;
+      background-color: #dcba1c;
       width: 70px;
       height: 3px;
       margin: auto;
@@ -242,7 +334,7 @@
     margin-bottom: 30px; }
     #Components > .title > .underline {
       display: block;
-      background-color: #ff973b;
+      background-color: #dcba1c;
       width: 70px;
       height: 3px;
       margin: auto;
@@ -264,7 +356,7 @@
     margin-right: 10px; }
   #Components > .row > .col > .components > .item > .description {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     margin: 0; }
 
 #Testimonials {
@@ -276,7 +368,7 @@
     margin-bottom: 30px; }
     #Testimonials > .title > .underline {
       display: block;
-      background-color: #ff973b;
+      background-color: #dcba1c;
       width: 70px;
       height: 3px;
       margin: auto;
