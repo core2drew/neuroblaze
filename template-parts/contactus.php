@@ -24,7 +24,7 @@
           <textarea class="form-control form-control-lg message" rows="7" placeholder="Enter your message"  autocomplete="off"></textarea>
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
-        <button type="submit" class="btn btn-primary submit">Submit</button>
+        <button type="submit" class="btn btn-primary nb-button nb-primary-button submit">Submit</button>
       </form>
     </div>
   </div>

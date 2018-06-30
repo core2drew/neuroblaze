@@ -15,3 +15,18 @@ html, body {
   font-size: 16px;
 }
 
+
+.nb-button {
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
+.nb-primary-button {
+  background-color: $primary-orange;
+  color: #fff;
+  border: 0;
+
+  &:hover {
+    background-color: $nb-primary-button-hover-bg-color;
+  }
+}

@@ -3,6 +3,8 @@ $primary-blue: #08afe4;
 $primary-yellow: #dcba1c;
 $primary-orange: #ff973b;
 
+$nb-primary-button-hover-bg-color: #e27b1f;
+
 @mixin primary-gradient() {
   background: #007cba; /* Old browsers */
   background: -moz-linear-gradient(top, #007cba 0%, #00afaa 100%); /* FF3.6-15 */

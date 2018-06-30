@@ -8,10 +8,9 @@
  *
  * @package Draco
  */
-
 get_header(); ?>
 
-<div class="warpper">
+<div class="wrapper">
 	<main id="main" class="site-main" role="main">  
 		<?php
 			get_template_part( 'template-parts/header');

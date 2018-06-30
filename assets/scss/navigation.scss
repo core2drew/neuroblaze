@@ -17,7 +17,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   
-  &.fixed {
+  &.fixed, &.single  {
     top: 0;
     position: fixed;
     margin-top: 0;
