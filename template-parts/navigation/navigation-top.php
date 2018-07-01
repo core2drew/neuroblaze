@@ -9,10 +9,10 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">About Us</a>
           <a class="nav-item nav-link" href="#">Benefits</a>
           <a class="nav-item nav-link" href="#">Components</a>
           <a class="nav-item nav-link" href="#">Blazing Experience</a>
+          <a class="nav-item nav-link" href="#">About Us</a>
           <a class="nav-item nav-link" href="#">Contact Us</a>
         </div>
       </div>

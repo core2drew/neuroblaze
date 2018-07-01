@@ -6,7 +6,7 @@
     </h1>
   </div>
   <div class="benefits row no-gutters justify-content-center">
-    <div class="col col-md-11">
+    <div class="col col-md-9">
       <div class="row">
         <div class="item col-sm">
           <div class="title">

@@ -1,4 +1,4 @@
-#Testimonials {
+#Testimonials, #MoreTestimonials {
   padding: 50px 0;
   > .title {
     color: $primary-blue;
@@ -15,47 +15,48 @@
     }
   }
   > .row {
-    > .col > .container-fluid > .row > .col > .card {
+    > .col > .row > .col > .card {
       @include flexbox();
       height: 100%;
       padding: 20px;
-      box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+      //box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
     }
     
-    > .col > .container-fluid > .row > .col > .card:nth-last-child(n + 2){
+    > .col > .row > .col > .card:nth-last-child(n + 2){
       margin-right: 30px;
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body > .card-title > .name{
+    > .col > .row > .col > .card > .card-body > .card-title > .name{
       font-size: 1.3em;
       margin: 0;
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body > .card-title > .position{
+    > .col > .row > .col > .card > .card-body > .card-title > .position{
       font-size: 1em;
       margin: 0;
       font-weight: 300;
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body {
+    > .col > .row > .col > .card > .card-body {
       @include flexbox();
       @include flex-direction(column);
       @include align-items(center);
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body > .card-img-top {
+    > .col > .row > .col > .card > .card-body > .card-img-top {
       border-radius: 500px;
-      width: 160px;
+      width: 150px;
+      margin-bottom: 10px;
     }
     
-    > .col > .container-fluid > .row > .col > .card > .card-body > .card-text {
+    > .col > .row > .col > .card > .card-body > .card-text {
       @include flexbox();
       text-align:left;
       font-size: 1.1em;
       margin: 0 30px;
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body > .card-text > .quote {
+    > .col > .row > .col > .card > .card-body > .card-text > .quote {
       @include flex-shrink(0);
       width: 30px;
       height: 20px;
@@ -63,20 +64,127 @@
       fill: $primary-orange;
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body > .readmore {
+    > .col > .row > .col > .card > .card-body > .readmore {
       @include align-self(flex-end);
       font-size: small;
     }
 
-    > .col > .container-fluid > .row > .col > .card > .card-body > .readmore:hover {
+    > .col > .row > .col > .card > .card-body > .readmore:hover {
       color: #fff;
     }
   }
 }
 
+#MoreTestimonials {
+  > .title {
+    font-size: 2em;
+    > .underline {
+      width: 50px;
+    }
+  }
+  > .row {
+    > .col > .row > .col > .card > .card-body > .card-img-top {
+      width: 125px;
+      height: 125px;
+    }
+    > .col > .row > .col > .card > .card-body > .card-text {
+      @include flexbox();
+      text-align:left;
+      font-size: 1em;
+      margin: 0;
+    }
+    > .col > .row > .col > .card > .card-body > .readmore {
+      @include align-self(flex-end);
+      font-size: 70%;
+    }
+  }
+}
+
 #TestimonialContainer {
+  margin-top: 43px;
+  padding-top: 70px;
+  margin-bottom: 40px;
+
   > .post-content {
-    width: 900px;
+    @include flexbox();
+    @include flex-direction(row);
     margin: auto;
+    position: relative;
+    padding: 0;
+    padding-bottom: 75px;
+  }
+
+  > .post-content > .client-info-container {
+    margin-right: 35px;
+    text-align: center;
+  }
+
+  > .post-content > .client-info-container > .thumbnail {
+    margin-bottom: 10px;
+  }
+
+  > .post-content > .client-info-container > .name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  > .post-content > .testimony-content {
+    font-size: 1.1em;
+    font-weight: 300;
+  }
+
+  > .post-content > .navigation {
+    border:1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  > .post-content > .navigation > .screen-reader-text {
+    display: none;
+  }
+
+  > .post-content > .navigation > .nav-links {
+    @include flexbox();
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next{
+    margin-left: auto;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-previous{
+    margin-right: auto;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next > a, 
+  > .post-content > .navigation > .nav-links > .nav-previous > a {
+    @include flexbox();
+    @include align-items(center);
+    color: #5a5a5a;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next > a:hover, 
+  > .post-content > .navigation > .nav-links > .nav-previous > a:hover {
+    text-decoration: none;
+    color: #5a5a5a;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next > a > .icon,
+  > .post-content > .navigation > .nav-links > .nav-previous > a > .icon{
+    width: 15px;
+    height: 15px;
+    fill: #5a5a5a;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-previous > a > .icon{
+    margin-right: 10px;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next > a > .icon{
+    margin-left: 10px;
   }
 }
