@@ -1,4 +1,4 @@
-<nav id="NavbarTop" class="navbar navbar-expand-lg navbar-light container-fluid">
+<nav id="NavbarTopSingle" class="navbar navbar-expand-lg navbar-light container-fluid single">
   <div class="row justify-content-center">
     <div class="col col-md-11">
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -9,11 +9,11 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <li class="nav-item nav-link" data-site-section='#Benefits'>Benefits</li>
-          <li class="nav-item nav-link" data-site-section='#Components'>Components</li>
-          <li class="nav-item nav-link" data-site-section='#Testimonials'>Blazing Experience</li>
-          <li class="nav-item nav-link" data-site-section='#AboutUs'>About Us</li>
-          <li class="nav-item nav-link" data-site-section='#ContactUsForm'>Contact Us</li>
+          <a class="nav-item nav-link" href="<?php echo get_home_url() . '/#Benefits' ?>">Benefits</a>
+          <a class="nav-item nav-link" href="<?php echo get_home_url() . '/#Components' ?>">Components</a>
+          <a class="nav-item nav-link" href="<?php echo get_home_url() . '/#Testimonials' ?>">Blazing Experience</a>
+          <a class="nav-item nav-link" href="<?php echo get_home_url() . '/#AboutUs' ?>">About Us</a>
+          <a class="nav-item nav-link" href="<?php echo get_home_url() . '/#ContactUsForm' ?>">Contact Us</a>
         </div>
       </div>
     </div>

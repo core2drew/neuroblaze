@@ -1,4 +1,4 @@
-<nav id="NavbarTop" class="navbar navbar-expand-lg navbar-light container-fluid">
+<nav id="NavbarTopFixed" class="navbar navbar-expand-lg navbar-light container-fluid">
   <div class="row justify-content-center">
     <div class="col col-md-11">
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

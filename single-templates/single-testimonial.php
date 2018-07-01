@@ -11,8 +11,5 @@ get_header();
 		get_template_part( 'content-templates/content','testimonial');
 	?>
 </div>
-<?php 
-		get_template_part( 'template-parts/contactus');
-?>
 
 <?php get_footer();

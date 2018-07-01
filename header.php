@@ -17,15 +17,19 @@
 <link rel="icon" href=<?php echo get_stylesheet_directory_uri() . "/assets/images/torch.ico" ?> type="image/ico" sizes="16x16">
 <link href=<?php echo get_stylesheet_directory_uri() . "/assets/bootstrap/css/bootstrap.min.css" ?> rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-<!-- <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
-<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> -->
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php !is_single() ? get_template_part( 'template-parts/navigation/navigation', 'contact' ) : null;?>
-<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-<div id="page">
-	<div class="site-content-contain" id="start">
-		<div id="content" class="site-content">
+<?php 
+	if(is_single()) {
+		get_template_part( 'template-parts/navigation/navigation', 'top-single' );
+	} else {
+		get_template_part( 'template-parts/navigation/navigation', 'contact' ) ;
+		get_template_part( 'template-parts/navigation/navigation', 'top' );
+		get_template_part( 'template-parts/navigation/navigation', 'top-fixed' );
+	}
+?>

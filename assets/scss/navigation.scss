@@ -1,14 +1,4 @@
-@include keyframe(fixednav) {
-  0% {
-    @include transform(translateY(-75px));
-  }
-
-  100% {
-    @include transform(translateY(70px));
-  }
-}
-
-#NavbarTop {
+#NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
   margin-top: 10px;
   position: absolute;
   width: 100%;
@@ -16,13 +6,6 @@
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
-  
-  &.fixed, &.single  {
-    top: 0;
-    position: fixed;
-    margin-top: 0;
-    background-color: $primary-blue;
-  }
 
   > .row {
     > .col {
@@ -56,3 +39,47 @@
     }
   }
 }
+
+#NavbarTopSingle {
+  &.single  {
+    top: 0;
+    position: fixed;
+    margin-top: 0;
+    background-color: $primary-blue;
+  }
+}
+
+#NavbarTopFixed {
+  @include transition(all, 0.5s);
+  position: fixed;
+  top: -90px;
+  margin-top: 0;
+  background-color: $primary-blue;
+  z-index: 3;
+
+  &.show {
+    top: 0;
+    @include animation(0, 0.5s, showFixNav);
+  }
+}
+
+@include keyframe(hideFixNav) {
+  from {
+    @include transform(translateY(0));
+  }
+  to {
+    @include transform(translateY(-135px));
+  }
+}
+
+@include keyframe(showFixNav) {
+  from {
+    @include transform(translateY(-135px));
+  }
+  to {
+    @include transform(translateY(0));
+  }
+}
+
+
+

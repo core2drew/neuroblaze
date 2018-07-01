@@ -1,5 +1,5 @@
 #Testimonials, #MoreTestimonials {
-  padding: 0 0 50px;
+  padding: 50px 0;
   > .title {
     color: $primary-blue;
     font-size: 3em;
@@ -53,7 +53,6 @@
       @include flexbox();
       text-align:left;
       font-size: 1.1em;
-      margin: 0 30px;
     }
 
     > .col > .row > .col > .card > .card-body > .card-text > .quote {
@@ -67,6 +66,7 @@
     > .col > .row > .col > .card > .card-body > .readmore {
       @include align-self(flex-end);
       font-size: small;
+      margin-top: auto;
     }
 
     > .col > .row > .col > .card > .card-body > .readmore:hover {
@@ -92,6 +92,11 @@
       text-align:left;
       font-size: 1em;
       margin: 0;
+    }
+    > .col > .row > .col > .card > .card-body > .card-text > .quote {
+      width: 15px;
+      height: 15px;
+      margin-top: 5px;
     }
     > .col > .row > .col > .card > .card-body > .readmore {
       @include align-self(flex-end);
@@ -194,4 +199,9 @@
   > .post-content > .navigation > .nav-links > .nav-next > a > .icon{
     margin-left: 10px;
   }
+}
+
+#TestimonialContainer + #Footer {
+  position: relative;
+  color: #777;
 }

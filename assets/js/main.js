@@ -1,20 +1,54 @@
 (function($){
+
+  var $window = $(window);
+  var $htmlBody = $('html, body');
+  var $fixedNavTop = $('#NavbarTopFixed');
+  var $navLink = $('#NavbarTop, #NavbarTopFixed').find('#navbarNavAltMarkup .navbar-nav .nav-link');
   
-var $window = $(window);
-
-function SetFixNavbar() {
-    var $navbarTop = $('#NavbarTop');
+  function SetFixNavbar() {
     var windowTop = $window.scrollTop();
-    var offset = 500;
-
-    if(windowTop > offset) {
-      $navbarTop.addClass('fixed');
+    var offset = $window.height();
+    if(windowTop > 200) {
+      $fixedNavTop.addClass('show');
     } else {
-      $navbarTop.removeClass('fixed');
+      $fixedNavTop.removeClass('show');
     }
   }
 
-  $window.scroll(function(){
-    SetFixNavbar()
+  function ScrollToSection(section){
+    var offset = 50;
+    $htmlBody.animate({
+      scrollTop: $(section).offset().top - offset
+    }, 1000);
+  }
+
+  function JumpToSection(){
+    var section = window.location.hash;
+    // history.pushState("", document.title, location.href.replace( /#.*/, ""));
+    if(section) {
+      setTimeout (function () {
+        ScrollToSection(section)
+       }, 100);
+    }
+  }
+
+  $htmlBody.bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove', function() {
+    $htmlBody.stop();
   })
+
+  $window.scroll(function(){
+    SetFixNavbar();
+  })
+
+  $navLink.on('click', function(e){
+    var section = $(this).data('siteSection');
+    ScrollToSection(section);
+  })
+
+  function init() {
+    JumpToSection()
+  }
+
+  init();
+
 })(jQuery)

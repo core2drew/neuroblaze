@@ -17,7 +17,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/benefits'); 
 			get_template_part( 'template-parts/components');
 			get_template_part( 'template-parts/testimonials');
-			get_template_part( 'template-parts/about-us');
+			get_template_part( 'template-parts/aboutus');
 			get_template_part( 'template-parts/contactus');
 		?>
 	</main><!-- #main -->
