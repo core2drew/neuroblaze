@@ -1,9 +1,11 @@
 //Contact Us
 $primary-blue: #08afe4;
-$primary-yellow: #dcba1c;
-$primary-orange: #ff973b;
+$primary-yellow: #FFB400;
+$primary-orange: #FF8300;
 
-$nb-primary-button-hover-bg-color: #e27b1f;
+$top-navigation-link-color: #FFD05F;
+
+$nb-primary-button-hover-bg-color: #DF7200;
 
 @mixin primary-gradient() {
   background: #007cba; /* Old browsers */

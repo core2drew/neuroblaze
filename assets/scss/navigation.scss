@@ -42,7 +42,6 @@
       
     > .col > .collapse  > .navbar-nav > .nav-link {
       font-size: 1.1em;
-      font-weight: 300;
       color: #fff;
       padding: 0;
       line-height: 1;
@@ -53,7 +52,7 @@
     }
   
     > .col > .collapse  > .navbar-nav > .nav-link:hover {
-      color: $primary-yellow;
+      color: $top-navigation-link-color;
     }
   }
 }

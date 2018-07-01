@@ -192,14 +192,13 @@
     height: 50px; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link {
     font-size: 1.1em;
-    font-weight: 300;
     color: #fff;
     padding: 0;
     line-height: 1; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2) {
     margin-right: 50px; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:hover {
-    color: #dcba1c; }
+    color: #FFD05F; }
 
 #Header {
   display: -webkit-box;
@@ -228,10 +227,10 @@
       display: block;
       height: 3px;
       width: 70px;
-      background-color: #dcba1c; }
+      background-color: #FFB400; }
 
 #AboutUs {
-  padding: 50px 0; }
+  padding: 0 0 50px; }
   #AboutUs > .title {
     color: #08afe4;
     font-size: 3em;
@@ -239,7 +238,7 @@
     margin-bottom: 60px; }
     #AboutUs > .title > .underline {
       display: block;
-      background-color: #dcba1c;
+      background-color: #FFB400;
       width: 70px;
       height: 3px;
       margin: auto;
@@ -247,12 +246,12 @@
   #AboutUs > .row > .mission {
     margin-right: 30px; }
   #AboutUs > .row > .section > .title {
-    color: #dcba1c;
-    font-size: 2.5em;
+    color: #FFB400;
+    font-size: 2em;
     margin-bottom: 10px; }
   #AboutUs > .row > .section > .title > .underline {
     display: none;
-    background-color: #dcba1c;
+    background-color: #FFB400;
     width: 70px;
     height: 3px;
     margin-top: 15px; }
@@ -264,7 +263,7 @@
     text-align: center; }
   #AboutUs > .row > #CoreValues > .row > .col > .card {
     border-radius: 10px;
-    border: 1px solid #dcba1c;
+    border: 1px solid #FFB400;
     height: 100%; }
   #AboutUs > .row > #CoreValues > .row > .col > .card > .card-img-top {
     width: 130px;
@@ -287,7 +286,7 @@
       text-align: center; }
     #Benefits > .title > .h1 > .underline {
       display: block;
-      background-color: #dcba1c;
+      background-color: #FFB400;
       width: 70px;
       height: 3px;
       margin: auto;
@@ -312,12 +311,12 @@
     margin-bottom: 90px; }
     #Components > .title > .underline {
       display: block;
-      background-color: #dcba1c;
+      background-color: #FFB400;
       width: 70px;
       height: 3px;
       margin: auto;
       margin-top: 15px; }
-  #Components > .row > .col > .components {
+  #Components > .row > .col > .components:nth-last-child(n + 2) {
     margin-bottom: 85px; }
   #Components > .row > .col > .components > .item {
     display: -webkit-box;
@@ -347,7 +346,7 @@
     margin-top: 45px; }
 
 #Testimonials, #MoreTestimonials {
-  padding: 50px 0; }
+  padding: 0 0 50px; }
   #Testimonials > .title, #MoreTestimonials > .title {
     color: #08afe4;
     font-size: 3em;
@@ -355,7 +354,7 @@
     margin-bottom: 30px; }
     #Testimonials > .title > .underline, #MoreTestimonials > .title > .underline {
       display: block;
-      background-color: #dcba1c;
+      background-color: #FFB400;
       width: 70px;
       height: 3px;
       margin: auto;
@@ -410,7 +409,7 @@
     width: 30px;
     height: 20px;
     margin-right: 15px;
-    fill: #ff973b; }
+    fill: #FF8300; }
   #Testimonials > .row > .col > .row > .col > .card > .card-body > .readmore, #MoreTestimonials > .row > .col > .row > .col > .card > .card-body > .readmore {
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
@@ -473,6 +472,14 @@
     font-size: 1.2em;
     margin: 0; }
   #TestimonialContainer > .post-content > .testimony-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
     font-size: 1.1em;
     font-weight: 300; }
   #TestimonialContainer > .post-content > .navigation {
@@ -505,16 +512,19 @@
     align-items: center;
     -moz-align-items: center;
     -webkit-align-items: center;
-    color: #5a5a5a; }
+    color: #FF8300; }
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-next > a:hover,
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-previous > a:hover {
     text-decoration: none;
-    color: #5a5a5a; }
+    color: #DF7200; }
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-next > a > .icon,
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-previous > a > .icon {
     width: 15px;
     height: 15px;
-    fill: #5a5a5a; }
+    fill: #FF8300; }
+  #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-next > a:hover > .icon,
+  #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-previous > a:hover > .icon {
+    color: #DF7200; }
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-previous > a > .icon {
     margin-right: 10px; }
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-next > a > .icon {
@@ -599,8 +609,8 @@ html, body {
   border-radius: 7px; }
 
 .nb-primary-button {
-  background-color: #ff973b;
+  background-color: #FF8300;
   color: #fff;
   border: 0; }
   .nb-primary-button:hover {
-    background-color: #e27b1f; }
+    background-color: #DF7200; }

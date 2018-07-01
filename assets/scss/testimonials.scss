@@ -1,5 +1,5 @@
 #Testimonials, #MoreTestimonials {
-  padding: 50px 0;
+  padding: 0 0 50px;
   > .title {
     color: $primary-blue;
     font-size: 3em;
@@ -130,6 +130,8 @@
   }
 
   > .post-content > .testimony-content {
+    @include flexbox();
+    @include align-items(center);
     font-size: 1.1em;
     font-weight: 300;
   }
@@ -164,20 +166,25 @@
   > .post-content > .navigation > .nav-links > .nav-previous > a {
     @include flexbox();
     @include align-items(center);
-    color: #5a5a5a;
+    color: $primary-orange;
   }
 
   > .post-content > .navigation > .nav-links > .nav-next > a:hover, 
   > .post-content > .navigation > .nav-links > .nav-previous > a:hover {
     text-decoration: none;
-    color: #5a5a5a;
+    color: $nb-primary-button-hover-bg-color;
   }
 
   > .post-content > .navigation > .nav-links > .nav-next > a > .icon,
   > .post-content > .navigation > .nav-links > .nav-previous > a > .icon{
     width: 15px;
     height: 15px;
-    fill: #5a5a5a;
+    fill: $primary-orange;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next > a:hover > .icon, 
+  > .post-content > .navigation > .nav-links > .nav-previous > a:hover > .icon {
+    color: $nb-primary-button-hover-bg-color;
   }
 
   > .post-content > .navigation > .nav-links > .nav-previous > a > .icon{
