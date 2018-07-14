@@ -10,7 +10,6 @@
   > .row {
     > .col {
       @include flexbox();
-      @include align-items(center);
     }
     
     > .col > .navbar-brand {
@@ -31,11 +30,43 @@
     }
      
     > .col > .collapse  > .navbar-nav > .nav-link:nth-last-child(n + 2) {
-      margin-right: 50px;
+      margin-right: 25px;
     }
   
     > .col > .collapse  > .navbar-nav > .nav-link:hover {
       color: $top-navigation-link-color;
+    }
+
+    > .col > .navbar-toggler {
+      margin-left: auto;
+      padding: 0;
+      border: 0;
+    }
+
+    > .col > .navbar-toggler:hover {
+      background-color: transparent;
+    }
+
+    > .col > .navbar-toggler > .icon {
+      fill: #fff;
+      width: 36px;
+      height: 30px;
+    }
+  }
+}
+
+#NavbarTop {
+  > .row {
+    > .col {
+      @include align-items(flex-end);
+    }
+  }
+}
+
+#NavbarTopFixed, #NavbarTopSingle {
+  > .row {
+    > .col {
+      @include align-items(center);
     }
   }
 }
@@ -81,5 +112,16 @@
   }
 }
 
-
-
+@media only screen and (max-width: 767px) {
+  #NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
+    > .row {
+      > .col > .navbar-brand > img{
+        height: 40px;
+      }
+      > .col > .navbar-toggler > .icon {
+        width: 28px;
+        height: 25px;
+      }
+    }
+  }
+}

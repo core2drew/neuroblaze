@@ -1,10 +1,10 @@
-<div id="Components" class="container-fluid">
+<div id="Components" class="mainpage-section container-fluid">
   <h1 class="title">
     Components
     <span class="underline"></span>
   </h1>
-  <div class="row no-gutters justify-content-center">
-    <div class="col col-md-9">
+  <div class="row justify-content-center">
+    <div class="col col-md-11 col-lg-11 col-xl-9">
       <div class="components row justify-content-center">
         <div class="col-md-4 item">
           <div class="card">

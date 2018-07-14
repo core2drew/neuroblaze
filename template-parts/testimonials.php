@@ -7,13 +7,13 @@
   );
 ?>
 
-<div id="Testimonials" class="container-fluid">
+<div id="Testimonials" class="mainpage-section container-fluid">
   <h1 class="title">
     Blazing Experience
     <span class="underline"></span>
   </h1>
-  <div class="row no-gutters justify-content-center">
-    <div class="col col-md-9">
+  <div class="row justify-content-center">
+    <div class="col col-md-11 col-lg-11 col-xl-9">
       <div class="row">
         <?php while ( $story_query->have_posts() ) : $story_query->the_post(); ?>
           <?php

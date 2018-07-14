@@ -30,3 +30,28 @@ html, body {
     background-color: $nb-primary-button-hover-bg-color;
   }
 }
+
+.mainpage-section {
+  > .title {
+    margin-bottom: 30px;
+    font-size: 3em;
+    color: $primary-blue;
+    text-align: center;
+    > .underline {
+      display: block;
+      background-color: $primary-yellow;
+      width: 70px;
+      height: 3px;
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mainpage-section {
+    > .title {
+      font-size: 2.5em;
+    }
+  }
+}

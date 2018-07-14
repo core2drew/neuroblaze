@@ -1,8 +1,8 @@
 <div id="ContactDetailsTop" class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col col-md-11">
+    <div class="col col-lg-11">
       <div class="row justify-content-between">
-        <div class="col-md-8 details">
+        <div class="col-sm-9 details">
           <span class="phone">
             <i class="fas fa-phone"></i>
             (02) 434 5855
@@ -16,7 +16,7 @@
             info@neuroblaze.com.ph
           </span>
         </div>
-        <div class="col-md-4 social-media">
+        <div class="col-sm-3 social-media align-items-center">
           Follow Us On:
           <a class="link" href="#">
             <i class="fab fa-facebook"></i>

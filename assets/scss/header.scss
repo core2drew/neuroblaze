@@ -30,3 +30,30 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 991px) {
+  #Header {
+    > .row {
+      > .col > .title {
+        font-size: 3em;
+      }
+  
+      > .col > .description {
+        width: 690px;
+        max-width: 100%;
+        font-size: 1.2em;
+        margin: 0 auto 1em;
+      }
+
+      > .col > .title,
+      > .col > .description {
+        text-align: center;
+      }
+
+      > .col > .underline {
+        margin: auto;
+      }
+    }
+  }
+}

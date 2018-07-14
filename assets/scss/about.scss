@@ -1,20 +1,10 @@
 #AboutUs {
   padding:50px 0;
   > .title {
-    color: $primary-blue;
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 60px;
-    > .underline {
-      display: block;
-      background-color: $primary-yellow;
-      width: 70px;
-      height: 3px;
-      margin: auto;
-      margin-top: 15px;
-    }
+    margin-bottom: 50px;
   }
   > .row {
+    margin: 0;
     > .mission {
       margin-right: 30px;
     }
@@ -35,7 +25,9 @@
       font-size: 1em;
       font-weight: 300;
     }
-
+    > #CoreValues {
+      padding: 0;
+    }
     > #CoreValues > .title {
       margin-bottom: 30px;
       text-align: center;
@@ -48,7 +40,7 @@
     }
 
     > #CoreValues > .row > .col > .card > .card-img-top{
-      width: 130px;
+      width: 90px;
       margin: auto;
       margin-top: 25px;
     }
@@ -61,6 +53,33 @@
       color: $primary-blue;
       text-transform: uppercase;
       font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #AboutUs {
+    > .row {
+  
+      > #CoreValues > .row > .col {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #AboutUs {
+    > .row {
+      > .mission {
+        margin: 0;
+      }
+      > .vision {
+        margin-bottom: 25px;
+      }
+      > #CoreValues {
+        padding: 0 15px;
+      }
     }
   }
 }

@@ -1,10 +1,10 @@
-<div id="AboutUs" class="container-fluid">
+<div id="AboutUs" class="mainpage-section container-fluid">
   <h1 class="title">
     About Us
     <span class="underline"></span>
   </h1>
-  <div class="row no-gutters justify-content-center">
-    <div class="section mission col-md-5">
+  <div class="row justify-content-center">
+    <div class="section mission col-md-11 col-lg-5">
       <h1 class="title">
         Mission
         <span class="underline"></span>
@@ -19,7 +19,7 @@
         WE COMMIT OURSELVES TO: Exceed our goals in achieving our target to enrich the lives of our stockholders and employees advocating a strong will that everything is possible if we will it to happen with the ultimate goal of serving the community and for the greater glory of God.
       </p>
     </div>
-    <div class="section vision col-md-5">
+    <div class="section vision col-md-11 col-lg-5">
       <h1 class="title">
         Vision
         <span class="underline"></span>
@@ -29,14 +29,14 @@
       </p>
     </div>
   </div>
-  <div class="row no-gutters justify-content-center">
-    <div id="CoreValues" class="section mission col-md-10">
+  <div class="row justify-content-center">
+    <div id="CoreValues" class="section col-md-11 col-lg-10">
       <h1 class="title">
         Core Values
         <span class="underline"></span>
       </h1>
-      <div class="row">
-        <div class="col col-md">
+      <div class="row justify-content-center">
+        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Integrity.png" ?> alt="Integrity">
             <div class="card-body">
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-md">
+        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Competence.png" ?> alt="Competence">
             <div class="card-body">
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-md">
+        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Teamwork.png" ?> alt="Teamwork">
             <div class="card-body">
@@ -86,7 +86,7 @@
           </div>
         </div>
 
-        <div class="col col-md">
+        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/WillPower.png" ?> alt="Will Power">
             <div class="card-body">
@@ -105,7 +105,7 @@
           </div>
         </div>
 
-        <div class="col col-md">
+        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Initiative.png" ?> alt="Initiative">
             <div class="card-body">

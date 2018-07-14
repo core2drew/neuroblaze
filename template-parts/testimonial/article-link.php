@@ -1,7 +1,9 @@
-<div class="col col-md-4">
+<div class="col col-12 col-md-4">
   <div class="card align-items-center">
     <div class="card-body p-0">
-      <?php the_post_thumbnail('thumbnail', array('class' => 'card-img-top')) ?>
+      <div class="card-img-container">
+        <?php the_post_thumbnail('thumbnail', array('class' => 'card-img')) ?>
+      </div>
       <div class="card-title text-center">
         <h5 class="name"><?php the_title() ?></h5>
         <p class="position"><?php echo get_post_meta($post->ID, 'position', true) ?></p>

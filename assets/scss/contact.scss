@@ -50,6 +50,7 @@
   padding: 70px 0 100px;
 
   > .row {
+    margin: 0;
     > .message {
       color: #fff;
       font-weight: 300;
@@ -71,6 +72,45 @@
     }
     > .footer {
       color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #ContactDetailsTop {
+    > .row {
+      > .col {
+
+        > .row > .details > .phone, 
+        > .row > .details > .mobile, 
+        > .row > .details > .email {
+          font-size: 0.8em;
+        }
+        
+        > .row > .social-media {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  #ContactUsForm {
+    > .row {
+      > .message {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #ContactDetailsTop {
+    > .row {
+      > .col {
+        > .row > .social-media {
+          display: none;
+        }
+      }
     }
   }
 }

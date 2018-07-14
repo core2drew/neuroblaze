@@ -1,14 +1,12 @@
-<div id="Benefits" class="container-fluid">
-  <div class="title">
-    <h1 class="h1">
+<div id="Benefits" class="mainpage-section container-fluid">
+  <h1 class="title">
       Benefits
       <span class="underline"></span>
-    </h1>
-  </div>
-  <div class="benefits row no-gutters justify-content-center">
-    <div class="col col-md-9">
+  </h1>
+  <div class="benefits row justify-content-center">
+    <div class="col col-md-11 col-lg-11 col-xl-9">
       <div class="row">
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="energy" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/energy.png" ?> />
             <h2>Energy</h2>
@@ -17,7 +15,7 @@
             Your body gets energized with the supercharged anti-oxidants, vitamins and minerals.
           </p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="eye" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/eye.png" ?> />
             <h2>Good Eyesight</h2>
@@ -26,7 +24,7 @@
             Improves learning speed through good eyesight.
           </p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="good sleep" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/good-sleep.png" ?> />
             <h2>Good Sleep</h2>
@@ -35,7 +33,7 @@
             Provides good quality sleep helps brain store memory and process things better.
           </p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="happy hormone" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/happy-hormone.png" ?> />
             <h2>Happy Hormone</h2>
@@ -46,7 +44,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="head-bulb" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/head-bulb.png" ?> />
             <h2>Mental Alertness</h2>
@@ -55,7 +53,7 @@
             Combats forgetfulness and brain fog.
           </p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="healthy heart" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/healthy-heart.png" ?> />
             <h2>Health Heart</h2>
@@ -64,7 +62,7 @@
             Maintains a healthy heart.
           </p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="wellness" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/wellness.png" ?> />
             <h2>Wellness</h2>
@@ -73,7 +71,7 @@
             Fights and prevents all kind of stress from entering our body.
           </p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-6 col-md">
           <div class="title">
             <img alt="immunity" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/immunity.png" ?> />
             <h2>Immunity</h2>

@@ -1,26 +1,9 @@
 #Benefits {
   //@include primary-gradient();
   padding: 50px 0;
-
-  > .title {
-    margin-bottom: 30px;
-    > .h1 {
-      color: $primary-blue;
-      font-size: 3em;
-      text-align: center;
-    }
-    > .h1 > .underline {
-      display: block;
-      background-color: $primary-yellow;
-      width: 70px;
-      height: 3px;
-      margin: auto;
-      margin-top: 15px;
-    }
-  }
   
   > .benefits {
-
+    margin: 0;
     > .col > .row > .item > .title {
       text-align: center;
     }
@@ -34,6 +17,34 @@
       font-size: 1.1em;
       text-align: center;
       font-weight: 300;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #Benefits {
+    > .benefits {
+
+      > .col > .row > .item > .title {
+        text-align: center;
+      }
+      > .col > .row > .item > .title > h2{
+        font-size: 1.2em;
+      }
+      > .col > .row > .item > .description {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #Benefits {
+    > .benefits {
+      > .col > .row > .item > .title > img {
+        width: 75px;
+        height: 75px;
+      }
     }
   }
 }
