@@ -707,7 +707,9 @@
     -webkit-align-self: center;
     -moz-align-self: center;
     -ms-align-self: center;
-    align-self: center; } }
+    align-self: center; }
+  #MoreTestimonials > .row {
+    margin: 0; } }
 
 #ContactDetailsTop {
   padding-top: 7px;

@@ -36,7 +36,7 @@
         <span class="underline"></span>
       </h1>
       <div class="row justify-content-center">
-        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
+        <div class="col col-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Integrity.png" ?> alt="Integrity">
             <div class="card-body">
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
+        <div class="col col-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Competence.png" ?> alt="Competence">
             <div class="card-body">
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
+        <div class="col col-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Teamwork.png" ?> alt="Teamwork">
             <div class="card-body">
@@ -86,7 +86,7 @@
           </div>
         </div>
 
-        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
+        <div class="col col-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/WillPower.png" ?> alt="Will Power">
             <div class="card-body">
@@ -105,7 +105,7 @@
           </div>
         </div>
 
-        <div class="col col-sm-12 col-md-6 col-lg-4 col-xl">
+        <div class="col col-12 col-md-6 col-lg-4 col-xl">
           <div class="card">
             <img class="card-img-top" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/core-values/Initiative.png" ?> alt="Initiative">
             <div class="card-body">
