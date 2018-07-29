@@ -3,7 +3,10 @@
   var $window = $(window);
   var $htmlBody = $('html, body');
   var $fixedNavTop = $('#NavbarTopFixed');
-  var $navLink = $('#NavbarTop, #NavbarTopFixed').find('#navbarNavAltMarkup .navbar-nav .nav-link');
+  var $navbars = $('#NavbarTop, #NavbarTopFixed, #SideNavBar, #NavbarTopSingle');
+  var $navLink = $navbars.find('.navbar-nav .nav-link');
+  var sideNavToggler = $navbars.find('.navbar-toggler');
+  var sideNav = $('#SideNavBar');
   
   function SetFixNavbar() {
     var windowTop = $window.scrollTop();
@@ -22,6 +25,10 @@
     }, 1000);
   }
 
+  function hideSideBar() {
+    sideNav.removeClass('active');
+  }
+
   function JumpToSection(){
     var section = window.location.hash;
     // history.pushState("", document.title, location.href.replace( /#.*/, ""));
@@ -38,11 +45,22 @@
 
   $window.scroll(function(){
     SetFixNavbar();
+    hideSideBar();
+  })
+
+  $window.resize(function(){
+    hideSideBar();
   })
 
   $navLink.on('click', function(e){
     var section = $(this).data('siteSection');
     ScrollToSection(section);
+    hideSideBar();
+  })
+
+  sideNavToggler.on('click', function(){
+    console.log("test")
+    sideNav.toggleClass('active');
   })
 
   function init() {

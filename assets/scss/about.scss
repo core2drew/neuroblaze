@@ -62,7 +62,7 @@
     > .row {
   
       > #CoreValues > .row > .col {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -70,6 +70,7 @@
 
 @media only screen and (max-width: 991px) {
   #AboutUs {
+    padding: 40px 0;
     > .row {
       > .mission {
         margin: 0;

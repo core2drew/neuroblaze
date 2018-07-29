@@ -13,8 +13,8 @@ $nav = get_the_post_navigation( array(
 				c0-7.196-2.78-13.592-7.848-18.652L134.72,284.406h329.992c14.828,0,27.288-12.78,27.288-27.6v-22.788
 				C492,219.198,479.172,207.418,464.344,207.418z"/>
 		</g>
-	</g></svg> Previous Experience',
-			'next_text' => 'Next Experience <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	</g></svg> Previous',
+			'next_text' => 'Next <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
 	<g>
 		<g>

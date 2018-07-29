@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img alt="NeuroBlaze" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/NeuroBlaze-site-logo.png" ?> />
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
         <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
           <g>
@@ -15,7 +15,8 @@
           </g>
         </svg>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end">
+        <img class="logo" alt="NeuroBlaze" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/NeuroBlaze-site-logo.png" ?> />
         <div class="navbar-nav">
           <li class="nav-item nav-link" data-site-section='#Benefits'>Benefits</li>
           <li class="nav-item nav-link" data-site-section='#Components'>Components</li>

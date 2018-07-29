@@ -110,7 +110,7 @@
   margin-top: 10px;
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   display: block;
   padding-top: 16px;
   padding-bottom: 16px; }
@@ -126,6 +126,8 @@
     border: 0; }
   #NavbarTop > .row > .col > img, #NavbarTopFixed > .row > .col > img, #NavbarTopSingle > .row > .col > img {
     height: 50px; }
+  #NavbarTop > .row > .col > .collapse > .logo, #NavbarTopFixed > .row > .col > .collapse > .logo, #NavbarTopSingle > .row > .col > .collapse > .logo {
+    display: none; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link, #NavbarTopFixed > .row > .col > .collapse > .navbar-nav > .nav-link, #NavbarTopSingle > .row > .col > .collapse > .navbar-nav > .nav-link {
     font-size: 1.1em;
     color: #fff;
@@ -138,7 +140,8 @@
   #NavbarTop > .row > .col > .navbar-toggler, #NavbarTopFixed > .row > .col > .navbar-toggler, #NavbarTopSingle > .row > .col > .navbar-toggler {
     margin-left: auto;
     padding: 0;
-    border: 0; }
+    border: 0;
+    outline: none; }
   #NavbarTop > .row > .col > .navbar-toggler:hover, #NavbarTopFixed > .row > .col > .navbar-toggler:hover, #NavbarTopSingle > .row > .col > .navbar-toggler:hover {
     background-color: transparent; }
   #NavbarTop > .row > .col > .navbar-toggler > .icon, #NavbarTopFixed > .row > .col > .navbar-toggler > .icon, #NavbarTopSingle > .row > .col > .navbar-toggler > .icon {
@@ -146,15 +149,13 @@
     width: 36px;
     height: 30px; }
 
-#NavbarTop > .row > .col {
-  align-items: flex-end;
-  -moz-align-items: flex-end;
-  -webkit-align-items: flex-end; }
-
 #NavbarTopFixed > .row > .col, #NavbarTopSingle > .row > .col {
   align-items: center;
   -moz-align-items: center;
   -webkit-align-items: center; }
+
+#NavbarTopFixed > .row > .col > .collapse, #NavbarTop > .row > .col > .collapse {
+  margin-top: 5px; }
 
 #NavbarTopSingle.single {
   top: 0;
@@ -171,7 +172,7 @@
   top: -90px;
   margin-top: 0;
   background-color: #08afe4;
-  z-index: 3; }
+  z-index: 1; }
   #NavbarTopFixed.show {
     top: 0;
     -webkit-animation-delay: 0;
@@ -307,6 +308,51 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
+@media only screen and (max-width: 991px) {
+  #NavbarTop > .row > .col > .navbar-brand > img, #NavbarTopFixed > .row > .col > .navbar-brand > img, #NavbarTopSingle > .row > .col > .navbar-brand > img {
+    height: 40px; }
+  #NavbarTop > .row > .col > .navbar-toggler > .icon, #NavbarTopFixed > .row > .col > .navbar-toggler > .icon, #NavbarTopSingle > .row > .col > .navbar-toggler > .icon {
+    width: 28px;
+    height: 25px; }
+  #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-item:nth-last-child(n + 2), #NavbarTopFixed > .row > .col > .collapse > .navbar-nav > .nav-item:nth-last-child(n + 2), #NavbarTopSingle > .row > .col > .collapse > .navbar-nav > .nav-item:nth-last-child(n + 2) {
+    margin-bottom: 15px;
+    margin-right: 0; } }
+
+#SideNavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh !important;
+  background-color: #08afe4;
+  width: 250px;
+  z-index: 3;
+  padding: 10px;
+  -moz-transition: all 0.8s ease 0.1s;
+  -o-transition: all 0.8s ease 0.1s;
+  -webkit-transition: all 0.8s ease 0.1s;
+  transition: all 0.8s ease 0.1s;
+  -moz-transform: translateX(-250px);
+  -o-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  -webkit-transform: translateX(-250px);
+  transform: translateX(-250px); }
+  #SideNavBar.active {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  #SideNavBar > .logo {
+    display: block;
+    margin-bottom: 20px;
+    height: 40px; }
+  #SideNavBar > .navbar-nav > .nav-link {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em; }
+  #SideNavBar > .navbar-nav > .nav-link:hover {
+    color: #FFD05F; }
+
 @media only screen and (max-width: 767px) {
   #NavbarTop > .row > .col > .navbar-brand > img, #NavbarTopFixed > .row > .col > .navbar-brand > img, #NavbarTopSingle > .row > .col > .navbar-brand > img {
     height: 40px; }
@@ -357,6 +403,10 @@
   #Header > .row > .col > .underline {
     margin: auto; } }
 
+@media only screen and (max-width: 767px) {
+  #Header {
+    height: 75vh; } }
+
 #AboutUs {
   padding: 50px 0; }
   #AboutUs > .title {
@@ -400,15 +450,17 @@
 
 @media only screen and (max-width: 1199px) {
   #AboutUs > .row > #CoreValues > .row > .col {
-    margin-bottom: 25px; } }
+    margin-bottom: 10px; } }
 
 @media only screen and (max-width: 991px) {
-  #AboutUs > .row > .mission {
-    margin: 0; }
-  #AboutUs > .row > .vision {
-    margin-bottom: 25px; }
-  #AboutUs > .row > #CoreValues {
-    padding: 0 15px; } }
+  #AboutUs {
+    padding: 40px 0; }
+    #AboutUs > .row > .mission {
+      margin: 0; }
+    #AboutUs > .row > .vision {
+      margin-bottom: 25px; }
+    #AboutUs > .row > #CoreValues {
+      padding: 0 15px; } }
 
 #Benefits {
   padding: 50px 0; }
@@ -483,7 +535,7 @@
   #Components > .title {
     margin-bottom: 30px; }
   #Components > .row > .col > .components:nth-last-child(n + 2) {
-    margin: 0; }
+    margin-bottom: 10px; }
   #Components > .row > .col > .components > .item {
     margin-bottom: 10px; }
   #Components > .row > .col > .components > .item > .card > img {
@@ -492,7 +544,7 @@
     margin-top: 15px; } }
 
 #Testimonials, #MoreTestimonials {
-  padding: 50px 0; }
+  padding: 40px 0 25px; }
   #Testimonials > .row, #MoreTestimonials > .row {
     margin: 0; }
     #Testimonials > .row > .col > .row > .col > .card, #MoreTestimonials > .row > .col > .row > .col > .card {
@@ -562,6 +614,7 @@
       color: #fff; }
 
 #MoreTestimonials > .title {
+  text-align: center;
   font-size: 2em; }
   #MoreTestimonials > .title > .underline {
     width: 50px; }
@@ -607,7 +660,6 @@
     -webkit-flex-directions: row;
     margin: auto;
     position: relative;
-    padding: 0;
     padding-bottom: 75px; }
   #TestimonialContainer > .post-content > .client-info-container {
     margin-right: 35px;
@@ -633,10 +685,11 @@
     border: 1px solid #ccc;
     border-left: none;
     border-right: none;
-    padding: 10px 0;
+    padding: 10px;
     position: absolute;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    left: 0; }
   #TestimonialContainer > .post-content > .navigation > .screen-reader-text {
     display: none; }
   #TestimonialContainer > .post-content > .navigation > .nav-links {
@@ -660,6 +713,9 @@
     -moz-align-items: center;
     -webkit-align-items: center;
     color: #FF8300; }
+  #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-next > a > label,
+  #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-previous > a > label {
+    margin: 0; }
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-next > a:hover,
   #TestimonialContainer > .post-content > .navigation > .nav-links > .nav-previous > a:hover {
     text-decoration: none;
@@ -691,7 +747,7 @@
 
 @media only screen and (max-width: 767px) {
   #Testimonials > .row > .col > .row > .col:nth-last-child(n + 2) {
-    margin-bottom: 25px; }
+    margin-bottom: 10px; }
   #Testimonials > .row > .col > .row > .col > .card > .card-body > .card-text {
     flex-direction: column;
     -moz-flex-direction: column;
@@ -709,7 +765,18 @@
     -ms-align-self: center;
     align-self: center; }
   #MoreTestimonials > .row {
-    margin: 0; } }
+    margin: 0; }
+  #MoreTestimonials > .row > .col > .row > .col:nth-last-child(n + 2) {
+    margin-bottom: 10px; } }
+
+@media only screen and (max-width: 576px) {
+  #TestimonialContainer > .post-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-directions: column; }
+  #TestimonialContainer > .post-content > .client-info-container {
+    margin-right: 0;
+    margin-bottom: 20px; } }
 
 #ContactDetailsTop {
   padding-top: 7px;
@@ -786,6 +853,10 @@
 
 @media only screen and (max-width: 630px) {
   #ContactDetailsTop > .row > .col > .row > .social-media {
+    display: none; } }
+
+@media only screen and (max-width: 430px) {
+  #ContactDetailsTop {
     display: none; } }
 
 #Footer {

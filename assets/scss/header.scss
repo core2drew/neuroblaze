@@ -31,7 +31,6 @@
   }
 }
 
-
 @media only screen and (max-width: 991px) {
   #Header {
     > .row {
@@ -55,5 +54,11 @@
         margin: auto;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #Header {
+    height: 75vh;
   }
 }

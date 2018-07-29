@@ -1,5 +1,5 @@
 #Testimonials, #MoreTestimonials {
-  padding: 50px 0;
+  padding: 40px 0 25px;
   > .row {
     margin: 0;
     > .col > .row > .col > .card {
@@ -72,6 +72,7 @@
 
 #MoreTestimonials {
   > .title {
+    text-align: center;
     font-size: 2em;
     > .underline {
       width: 50px;
@@ -110,7 +111,6 @@
     @include flex-direction(row);
     margin: auto;
     position: relative;
-    padding: 0;
     padding-bottom: 75px;
   }
 
@@ -140,10 +140,11 @@
     border:1px solid #ccc;
     border-left: none;
     border-right: none;
-    padding: 10px 0;
+    padding: 10px;
     position: absolute;
     width: 100%;
     bottom: 0;
+    left: 0;
   }
 
   > .post-content > .navigation > .screen-reader-text {
@@ -167,6 +168,11 @@
     @include flexbox();
     @include align-items(center);
     color: $primary-orange;
+  }
+
+  > .post-content > .navigation > .nav-links > .nav-next > a > label, 
+  > .post-content > .navigation > .nav-links > .nav-previous > a > label {
+    margin: 0;
   }
 
   > .post-content > .navigation > .nav-links > .nav-next > a:hover, 
@@ -222,7 +228,7 @@
   #Testimonials {
     > .row {
       > .col > .row > .col:nth-last-child(n + 2){
-        margin-bottom: 25px;
+        margin-bottom: 10px;
       }
 
       > .col > .row > .col > .card > .card-body > .card-text {
@@ -245,6 +251,22 @@
   #MoreTestimonials {
     > .row {
       margin: 0;
+    }
+
+    > .row > .col > .row > .col:nth-last-child(n + 2){
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #TestimonialContainer {
+    > .post-content {
+      @include flex-direction(column);
+    }
+    > .post-content > .client-info-container {
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 }

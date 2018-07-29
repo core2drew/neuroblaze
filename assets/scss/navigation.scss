@@ -2,7 +2,7 @@
   margin-top: 10px;
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -21,6 +21,10 @@
     > .col > img {
       height: 50px;
     }
+
+    > .col > .collapse  > .logo {
+      display: none;
+    }
       
     > .col > .collapse  > .navbar-nav > .nav-link {
       font-size: 1.1em;
@@ -29,7 +33,7 @@
       line-height: 1;
     }
      
-    > .col > .collapse  > .navbar-nav > .nav-link:nth-last-child(n + 2) {
+    > .col > .collapse  > .navbar-nav > .nav-link:nth-last-child(n + 2) { 
       margin-right: 25px;
     }
   
@@ -41,6 +45,7 @@
       margin-left: auto;
       padding: 0;
       border: 0;
+      outline: none;
     }
 
     > .col > .navbar-toggler:hover {
@@ -55,18 +60,18 @@
   }
 }
 
-#NavbarTop {
-  > .row {
-    > .col {
-      @include align-items(flex-end);
-    }
-  }
-}
-
 #NavbarTopFixed, #NavbarTopSingle {
   > .row {
     > .col {
       @include align-items(center);
+    }
+  }
+}
+
+#NavbarTopFixed, #NavbarTop{
+  > .row {
+    > .col > .collapse  {
+      margin-top: 5px;
     }
   }
 }
@@ -86,7 +91,7 @@
   top: -90px;
   margin-top: 0;
   background-color: $primary-blue;
-  z-index: 3;
+  z-index: 1;
 
   &.show {
     top: 0;
@@ -112,9 +117,60 @@
   }
 }
 
+@media only screen and (max-width: 991px) {
+  #NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
+    > .row {
+      > .col > .navbar-brand > img{
+        height: 40px;
+      }
+      > .col > .navbar-toggler > .icon {
+        width: 28px;
+        height: 25px;
+      }
+      > .col > .collapse > .navbar-nav > .nav-item:nth-last-child(n + 2) {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+#SideNavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh !important;
+  background-color: $primary-blue;
+  width: 250px;
+  z-index: 3;
+  padding: 10px;
+  @include transition(all 0.8s ease 0.1s);
+  @include transform(translateX(-250px));
+  &.active {
+    @include transform(translateX(0));
+  }
+  > .logo {
+    display: block;
+    margin-bottom: 20px;
+    height: 40px;
+  }
+
+  > .navbar-nav > .nav-link{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+
+  > .navbar-nav > .nav-link:hover {
+    color: $top-navigation-link-color;
+  }
+
+}
+
 @media only screen and (max-width: 767px) {
   #NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
     > .row {
+
       > .col > .navbar-brand > img{
         height: 40px;
       }

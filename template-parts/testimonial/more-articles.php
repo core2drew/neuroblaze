@@ -3,7 +3,7 @@
     More Blazing Experience
     <span class="underline"></span>
   </h1>
-  <div class="row no-gutters justify-content-center related-projects">
+  <div class="row justify-content-center related-projects">
     <div class="col">
       <div class="row">
         <?php	

@@ -56,8 +56,9 @@
       margin-bottom: 30px;
     }
     > .row {
+
       > .col > .components:nth-last-child(n + 2) {
-        margin: 0;
+        margin-bottom: 10px;
       }
       > .col > .components > .item{
         margin-bottom: 10px;
