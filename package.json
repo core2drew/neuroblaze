@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-scss":"node-sass --include-path scss assets/scss/main.scss main.css",
+    "build-scss": "node-sass --include-path scss assets/scss/main.scss main.css",
     "watch-scss": "nodemon -e scss -x npm run build-scss"
   },
   "keywords": [],

@@ -1,9 +1,29 @@
 #Header {
   @include flexbox();
   @include align-items(center);
-  background-image: url('../neuroblaze/assets/images/header.jpg');
+  //background-image: url('../neuroblaze/assets/images/header.jpg');
+  //background-size: cover;
   height: 100vh;
-  background-size: cover;
+  padding: 0;
+
+  > .carousel  {
+    height: 100%;
+    width: 100%;
+
+    > .carousel-inner {
+      height: 100%;
+    }
+
+    > .carousel-inner > .carousel-item {
+      height: 100vh;
+    }
+
+    > .carousel-inner > .carousel-item > .image {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 
   > .row {
     width: 100%;

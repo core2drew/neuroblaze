@@ -58,6 +58,18 @@
     > .col > form {
       text-align: center;
     }
+    > .col > form > .form-group {
+      position: relative;
+      margin-bottom: 1.5em;
+    }
+    > .col > form > .form-group > label.error {
+      position: absolute;
+      font-size: 0.8em;
+      margin: 0;
+      color: red;
+      right: 10px;
+      top: 9px;
+    }
     > .col > form > .form-group > .name,
     > .col > form > .form-group > .email,
     > .col > form > .form-group > .mobile,

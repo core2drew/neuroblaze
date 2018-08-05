@@ -7,21 +7,21 @@
   </div>
   <div class="row justify-content-center">
     <div class="col col-11 col-lg-8 col-xl-5">
-      <form autocomplete="off">
+      <form autocomplete="off" action="#" method="POST">
         <div class="form-group">
-          <input type="text" class="form-control name" placeholder="Enter your fullname" autocomplete="off">
+          <input type="text" name="fullname" class="form-control name" placeholder="Enter your fullname" autocomplete="off">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <input type="text" class="form-control email" placeholder="Enter your e-mail"  autocomplete="faofflse">
+          <input type="text" name="email" class="form-control email" placeholder="Enter your e-mail"  autocomplete="faofflse">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <input type="text" class="form-control mobile" placeholder="Enter your mobile number"  autocomplete="off">
+          <input type="text" name="mobile" class="form-control mobile" placeholder="Enter your mobile number"  autocomplete="off">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="form-group">
-          <textarea class="form-control message" rows="7" placeholder="Enter your message"  autocomplete="off"></textarea>
+          <textarea class="form-control message" name="message" rows="7" placeholder="Enter your message"  autocomplete="off"></textarea>
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <button type="submit" class="btn btn-primary nb-button nb-primary-button submit">Submit</button>

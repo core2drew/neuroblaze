@@ -119,7 +119,10 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    align-items: flex-end;
+    -moz-align-items: flex-end;
+    -webkit-align-items: flex-end; }
   #NavbarTop > .row > .col > .navbar-brand, #NavbarTopFixed > .row > .col > .navbar-brand, #NavbarTopSingle > .row > .col > .navbar-brand {
     margin: 0;
     padding: 0;
@@ -132,7 +135,8 @@
     font-size: 1.1em;
     color: #fff;
     padding: 0;
-    line-height: 1; }
+    line-height: 1;
+    cursor: pointer; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2), #NavbarTopFixed > .row > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2), #NavbarTopSingle > .row > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2) {
     margin-right: 25px; }
   #NavbarTop > .row > .col > .collapse > .navbar-nav > .nav-link:hover, #NavbarTopFixed > .row > .col > .collapse > .navbar-nav > .nav-link:hover, #NavbarTopSingle > .row > .col > .collapse > .navbar-nav > .nav-link:hover {
@@ -369,9 +373,19 @@
   align-items: center;
   -moz-align-items: center;
   -webkit-align-items: center;
-  background-image: url("../neuroblaze/assets/images/header.jpg");
   height: 100vh;
-  background-size: cover; }
+  padding: 0; }
+  #Header > .carousel {
+    height: 100%;
+    width: 100%; }
+    #Header > .carousel > .carousel-inner {
+      height: 100%; }
+    #Header > .carousel > .carousel-inner > .carousel-item {
+      height: 100vh; }
+    #Header > .carousel > .carousel-inner > .carousel-item > .image {
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat; }
   #Header > .row {
     width: 100%; }
     #Header > .row > .col-md-11 {
@@ -829,6 +843,16 @@
       font-weight: 300; }
     #ContactUsForm > .row > .col > form {
       text-align: center; }
+    #ContactUsForm > .row > .col > form > .form-group {
+      position: relative;
+      margin-bottom: 1.5em; }
+    #ContactUsForm > .row > .col > form > .form-group > label.error {
+      position: absolute;
+      font-size: 0.8em;
+      margin: 0;
+      color: red;
+      right: 10px;
+      top: 9px; }
     #ContactUsForm > .row > .col > form > .form-group > .name,
     #ContactUsForm > .row > .col > form > .form-group > .email,
     #ContactUsForm > .row > .col > form > .form-group > .mobile,

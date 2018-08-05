@@ -10,6 +10,7 @@
   > .row {
     > .col {
       @include flexbox();
+      @include align-items(flex-end);
     }
     
     > .col > .navbar-brand {
@@ -31,6 +32,7 @@
       color: #fff;
       padding: 0;
       line-height: 1;
+      cursor: pointer;
     }
      
     > .col > .collapse  > .navbar-nav > .nav-link:nth-last-child(n + 2) { 
