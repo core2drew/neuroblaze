@@ -373,7 +373,7 @@
   align-items: center;
   -moz-align-items: center;
   -webkit-align-items: center;
-  height: 93vh;
+  height: 96vh;
   padding: 0; }
   #Header > .carousel {
     height: 100%;
@@ -423,7 +423,15 @@
 
 @media only screen and (max-width: 767px) {
   #Header {
-    height: 75vh; } }
+    height: 90vh; } }
+
+@media only screen and (max-width: 630px) {
+  #Header {
+    height: 80vh; } }
+
+@media only screen and (max-width: 500px) {
+  #Header {
+    height: 65vh; } }
 
 #AboutUs {
   padding: 50px 0; }
@@ -880,10 +888,6 @@
     font-size: 1.3em; } }
 
 @media only screen and (max-width: 630px) {
-  #ContactDetailsTop > .row > .col > .row > .social-media {
-    display: none; } }
-
-@media only screen and (max-width: 430px) {
   #ContactDetailsTop {
     display: none; } }
 
