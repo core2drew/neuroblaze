@@ -6,7 +6,9 @@
     )
   );
 ?>
-
+<?php
+  if($story_query->have_posts()):
+?>
 <div id="Testimonials" class="mainpage-section container-fluid">
   <h1 class="title">
     Blazing Experience
@@ -14,7 +16,7 @@
   </h1>
   <div class="row justify-content-center">
     <div class="col col-md-11 col-lg-11 col-xl-9">
-      <div class="row">
+      <div class="row justify-content-center">
         <?php while ( $story_query->have_posts() ) : $story_query->the_post(); ?>
           <?php
               /*
@@ -29,3 +31,6 @@
     </div>
   </div>
 </div>
+<?php
+  endif;
+?>
