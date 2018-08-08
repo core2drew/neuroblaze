@@ -3,7 +3,7 @@
   @include align-items(center);
   //background-image: url('../neuroblaze/assets/images/header.jpg');
   //background-size: cover;
-  height: 100vh;
+  height: 93vh;
   padding: 0;
 
   > .carousel  {
@@ -15,13 +15,15 @@
     }
 
     > .carousel-inner > .carousel-item {
-      height: 100vh;
+      height: 100%;
     }
 
     > .carousel-inner > .carousel-item > .image {
       height: 100%;
-      background-size: cover;
+      background-size: contain, cover;
       background-repeat: no-repeat;
+      background-position-y: bottom, center;
+      background-position-x: center;
     }
   }
 
@@ -53,6 +55,11 @@
 
 @media only screen and (max-width: 991px) {
   #Header {
+    > .carousel  {
+      > .carousel-inner > .carousel-item > .image {
+        background-size: 130%, cover;
+      }
+    }
     > .row {
       > .col > .title {
         font-size: 3em;

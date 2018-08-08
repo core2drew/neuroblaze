@@ -373,7 +373,7 @@
   align-items: center;
   -moz-align-items: center;
   -webkit-align-items: center;
-  height: 100vh;
+  height: 93vh;
   padding: 0; }
   #Header > .carousel {
     height: 100%;
@@ -381,11 +381,13 @@
     #Header > .carousel > .carousel-inner {
       height: 100%; }
     #Header > .carousel > .carousel-inner > .carousel-item {
-      height: 100vh; }
+      height: 100%; }
     #Header > .carousel > .carousel-inner > .carousel-item > .image {
       height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat; }
+      background-size: contain, cover;
+      background-repeat: no-repeat;
+      background-position-y: bottom, center;
+      background-position-x: center; }
   #Header > .row {
     width: 100%; }
     #Header > .row > .col-md-11 {
@@ -404,6 +406,8 @@
       background-color: #FFB400; }
 
 @media only screen and (max-width: 991px) {
+  #Header > .carousel > .carousel-inner > .carousel-item > .image {
+    background-size: 130%, cover; }
   #Header > .row > .col > .title {
     font-size: 3em; }
   #Header > .row > .col > .description {
