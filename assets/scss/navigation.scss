@@ -144,7 +144,7 @@
   height: 100vh !important;
   background-color: $primary-blue;
   width: 250px;
-  z-index: 3;
+  z-index: 16;
   padding: 10px;
   @include transition(all 0.8s ease 0.1s);
   @include transform(translateX(-250px));

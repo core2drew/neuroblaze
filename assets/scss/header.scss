@@ -9,7 +9,6 @@
   > .carousel  {
     height: 100%;
     width: 100%;
-
     > .carousel-inner {
       height: 100%;
     }
@@ -55,11 +54,6 @@
 
 @media only screen and (max-width: 991px) {
   #Header {
-    > .carousel  {
-      > .carousel-inner > .carousel-item > .image {
-        background-size: 130%, cover;
-      }
-    }
     > .row {
       > .col > .title {
         font-size: 3em;
@@ -84,20 +78,20 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   #Header {
-    height: 90vh;
+    height: 70vh;
   }
 }
 
 @media only screen and (max-width: 630px) {
   #Header {
-    height: 80vh;
+    height: 60vh;
   }
 }
 
 @media only screen and (max-width: 500px) {
   #Header {
-    height: 65vh;
+    height: 50vh;
   }
 }

@@ -68,7 +68,7 @@ jQuery(document).ready(function($){
 
   var initCarousel = function () {
     var carousel = $('.carousel')
-    carousel.carousel('pause')
+    carousel.carousel()
   }
 
   function init() {
