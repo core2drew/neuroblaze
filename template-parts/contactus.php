@@ -1,4 +1,4 @@
-<div id="ContactUsForm" class="container-fluid">
+<div id="ContactUsForm" class="container-fluid" style="background-image:url(<?php echo get_stylesheet_directory_uri() . "/assets/images/contact.jpg" ?>">
   <div class="row justify-content-center no-gutters mb-5">
     <h3 class="h4 text-center message col-10 col-md-8 col-lg-6 col-xl-4">
       We are so looking forward to hearing from you, 
