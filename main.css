@@ -386,8 +386,9 @@
       height: 100%;
       background-size: contain, cover;
       background-repeat: no-repeat;
-      background-position-y: bottom, center;
       background-position-x: center; }
+    #Header > .carousel > .carousel-inner > .carousel-item > .slide-1 {
+      background-position-y: bottom, center; }
   #Header > .row {
     width: 100%; }
     #Header > .row > .col-md-11 {
@@ -406,6 +407,13 @@
       background-color: #FFB400; }
 
 @media only screen and (max-width: 991px) {
+  #Header > .carousel > .carousel-inner > .carousel-item > .slide-1,
+  #Header > .carousel > .carousel-inner > .carousel-item > .slide-2 {
+    background-size: 200%, cover; }
+  #Header > .carousel > .carousel-inner > .carousel-item > .slide-1 {
+    background-image: url("assets/images/sliders/girl-model-mobile.png"), url("assets/images/sliders/blue-background.jpg") !important; }
+  #Header > .carousel > .carousel-inner > .carousel-item > .slide-2 {
+    background-image: url("assets/images/sliders/capsule-mobile.png"), url("assets/images/sliders/blue-background.jpg") !important; }
   #Header > .row > .col > .title {
     font-size: 3em; }
   #Header > .row > .col > .description {
@@ -419,17 +427,9 @@
   #Header > .row > .col > .underline {
     margin: auto; } }
 
-@media only screen and (max-width: 768px) {
-  #Header {
-    height: 70vh; } }
-
 @media only screen and (max-width: 630px) {
   #Header {
-    height: 60vh; } }
-
-@media only screen and (max-width: 500px) {
-  #Header {
-    height: 50vh; } }
+    height: 100vh; } }
 
 #AboutUs {
   padding: 50px 0; }
@@ -924,6 +924,29 @@ html, body {
     height: 3px;
     margin: auto;
     margin-top: 15px; }
+
+#BuyNow {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #FF8300;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px; }
+  #BuyNow:hover {
+    text-decoration: none; }
+  #BuyNow > .icon {
+    fill: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 15px; }
 
 @media only screen and (max-width: 991px) {
   .mainpage-section > .title {

@@ -18,7 +18,7 @@
         </div>
         <div class="col-sm-3 social-media align-items-center">
           Follow Us On:
-          <a class="link" href="#">
+          <a class="link" target="_blank" href="https://www.facebook.com/neuroblaze.ph/">
             <i class="fab fa-facebook"></i>
           </a>
         </div>

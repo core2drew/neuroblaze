@@ -8,9 +8,9 @@
         <div class="carousel-item active">
           <div class="image slide-1 d-block w-100" style="background-image:url(<?php echo get_stylesheet_directory_uri() . "/assets/images/sliders/girl-model.png" ?>), url(<?php echo get_stylesheet_directory_uri() . "/assets/images/sliders/blue-background.jpg" ?>)"></div>
         </div>
-        <!-- <div class="carousel-item">
-          <div class="image slide-2 d-block w-100" style="background-image:url(<?php echo get_stylesheet_directory_uri() . "/assets/images/sliders/girl-model.png" ?>), url(<?php echo get_stylesheet_directory_uri() . "/assets/images/sliders/blue-background.jpg" ?>)"></div>
-        </div> -->
+        <div class="carousel-item">
+          <div class="image slide-2 d-block w-100" style="background-image:url(<?php echo get_stylesheet_directory_uri() . "/assets/images/sliders/capsule.png" ?>), url(<?php echo get_stylesheet_directory_uri() . "/assets/images/sliders/blue-background.jpg" ?>); background-position-y: center"></div>
+        </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

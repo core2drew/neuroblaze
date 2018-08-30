@@ -21,8 +21,11 @@
       height: 100%;
       background-size: contain, cover;
       background-repeat: no-repeat;
-      background-position-y: bottom, center;
       background-position-x: center;
+    }
+
+    > .carousel-inner > .carousel-item > .slide-1 {
+      background-position-y: bottom, center;
     }
   }
 
@@ -54,6 +57,18 @@
 
 @media only screen and (max-width: 991px) {
   #Header {
+    > .carousel {
+      > .carousel-inner > .carousel-item > .slide-1,
+      > .carousel-inner > .carousel-item > .slide-2 {
+        background-size: 200%, cover;
+      }
+      > .carousel-inner > .carousel-item > .slide-1 {
+        background-image: url('assets/images/sliders/girl-model-mobile.png'), url('assets/images/sliders/blue-background.jpg') !important;
+      }
+      > .carousel-inner > .carousel-item > .slide-2 {
+        background-image: url('assets/images/sliders/capsule-mobile.png'), url('assets/images/sliders/blue-background.jpg') !important;
+      }
+    }
     > .row {
       > .col > .title {
         font-size: 3em;
@@ -78,20 +93,8 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #Header {
-    height: 70vh;
-  }
-}
-
 @media only screen and (max-width: 630px) {
   #Header {
-    height: 60vh;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #Header {
-    height: 50vh;
+    height: 100vh;
   }
 }
