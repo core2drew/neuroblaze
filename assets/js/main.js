@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
     var $contactUsSubmit = $contactUsForm.find('button')
 
     var submitForm = function(){
-      $contactUsForm.validate({
+     var contactUsForm =  $contactUsForm.validate({
         rules:{
           fullname: {
             required: true,
@@ -23,12 +23,28 @@ jQuery(document).ready(function($){
           },
           mobile: {
             required: true,
+            digits: true
           },
           message: {
             required: true,
           }
         }
       })
+
+      if($contactUsForm.valid()) {
+        $contactUsForm.submit(function(e){
+          e.preventDefault()  
+          var data = {};
+          $.each($contactUsForm.serializeArray(), function(i, field) {
+            data[field.name] = field.value;
+          })
+          data.action = 'neuroblaze_sendmail'
+          $.post(ajaxObject.ajaxurl, data, function(data){
+            alert('Message Sent');
+            $contactUsForm.get(0).reset()
+          })
+        })
+      }
     }
     $contactUsSubmit.on('click', function(){
       submitForm()

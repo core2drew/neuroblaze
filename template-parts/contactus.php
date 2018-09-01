@@ -7,7 +7,7 @@
   </div>
   <div class="row justify-content-center">
     <div class="col col-11 col-lg-8 col-xl-5">
-      <form autocomplete="off" action="#" method="POST">
+      <form autocomplete="off" method="POST">
         <div class="form-group">
           <input type="text" name="fullname" class="form-control name" placeholder="Enter your fullname" autocomplete="off">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
