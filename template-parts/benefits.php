@@ -56,7 +56,7 @@
         <div class="item col-6 col-md">
           <div class="title">
             <img alt="healthy heart" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/benefits/healthy-heart.png" ?> />
-            <h2>Health Heart</h2>
+            <h2>Heart Health</h2>
           </div>
           <p class="description">
             Maintains a healthy heart.
