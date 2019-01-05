@@ -1,4 +1,6 @@
-#NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
+#NavbarTop,
+#NavbarTopFixed,
+#NavbarTopSingle {
   margin-top: 10px;
   position: absolute;
   width: 100%;
@@ -12,7 +14,7 @@
       @include flexbox();
       @include align-items(flex-end);
     }
-    
+
     > .col > .navbar-brand {
       margin: 0;
       padding: 0;
@@ -23,23 +25,23 @@
       height: 50px;
     }
 
-    > .col > .collapse  > .logo {
+    > .col > .collapse > .logo {
       display: none;
     }
-      
-    > .col > .collapse  > .navbar-nav > .nav-link {
+
+    > .col > .collapse > .navbar-nav > .nav-link {
       font-size: 1.1em;
       color: #fff;
       padding: 0;
       line-height: 1;
       cursor: pointer;
     }
-     
-    > .col > .collapse  > .navbar-nav > .nav-link:nth-last-child(n + 2) { 
+
+    > .col > .collapse > .navbar-nav > .nav-link:nth-last-child(n + 2) {
       margin-right: 25px;
     }
-  
-    > .col > .collapse  > .navbar-nav > .nav-link:hover {
+
+    > .col > .collapse > .navbar-nav > .nav-link:hover {
       color: $top-navigation-link-color;
     }
 
@@ -62,7 +64,13 @@
   }
 }
 
-#NavbarTopFixed, #NavbarTopSingle {
+#NavbarTop {
+  background-color: rgba(8, 175, 228, 0.7);
+  margin: 0;
+}
+
+#NavbarTopFixed,
+#NavbarTopSingle {
   > .row {
     > .col {
       @include align-items(center);
@@ -70,16 +78,8 @@
   }
 }
 
-#NavbarTopFixed, #NavbarTop{
-  > .row {
-    > .col > .collapse  {
-      margin-top: 5px;
-    }
-  }
-}
-
 #NavbarTopSingle {
-  &.single  {
+  &.single {
     top: 0;
     position: fixed;
     margin-top: 0;
@@ -120,9 +120,11 @@
 }
 
 @media only screen and (max-width: 991px) {
-  #NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
+  #NavbarTop,
+  #NavbarTopFixed,
+  #NavbarTopSingle {
     > .row {
-      > .col > .navbar-brand > img{
+      > .col > .navbar-brand > img {
         height: 40px;
       }
       > .col > .navbar-toggler > .icon {
@@ -157,7 +159,7 @@
     height: 40px;
   }
 
-  > .navbar-nav > .nav-link{
+  > .navbar-nav > .nav-link {
     color: #fff;
     cursor: pointer;
     font-size: 1.1em;
@@ -166,14 +168,14 @@
   > .navbar-nav > .nav-link:hover {
     color: $top-navigation-link-color;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
-  #NavbarTop, #NavbarTopFixed, #NavbarTopSingle {
+  #NavbarTop,
+  #NavbarTopFixed,
+  #NavbarTopSingle {
     > .row {
-
-      > .col > .navbar-brand > img{
+      > .col > .navbar-brand > img {
         height: 40px;
       }
       > .col > .navbar-toggler > .icon {
@@ -181,5 +183,12 @@
         height: 25px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #NavbarTop {
+    background-color: $primary-blue;
+    margin: 0;
   }
 }

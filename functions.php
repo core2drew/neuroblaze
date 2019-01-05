@@ -13,7 +13,7 @@ function neuroblaze_sendmail(){
 	$email = $_POST['email'];
 	$mobile = $_POST['mobile'];
 	$message = $_POST['message'];
-	$to = 'calupesandro@gmail.com';
+	$to = 'andreacalupe.hanseopharma@gmail.com, alyssatan.hanseopharma@gmail.com';
 	$subject = 'NeuroBlaze';
     $message = "
         From: $fullname <$email>

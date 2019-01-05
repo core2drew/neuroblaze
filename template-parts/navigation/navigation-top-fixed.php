@@ -1,6 +1,6 @@
 <nav id="NavbarTopFixed" class="navbar navbar-expand-lg navbar-light container-fluid">
   <div class="row justify-content-center">
-    <div class="col col-lg-11">
+    <div class="col col-lg-11 align-items-center">
       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <img alt="NeuroBlaze" src=<?php echo get_stylesheet_directory_uri() . "/assets/images/NeuroBlaze-site-logo.png" ?> />
       </a>

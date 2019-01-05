@@ -10,11 +10,11 @@
 @import "contact";
 @import "footer";
 
-html, body {
+html,
+body {
   font-family: "Lato", sans-serif !important;
   font-size: 16px;
 }
-
 
 .nb-button {
   text-transform: uppercase;
@@ -50,8 +50,9 @@ html, body {
 
 #BuyNow {
   @include flexbox();
+  @include transition(all, 0.5s);
   position: fixed;
-  bottom: 15px;
+  bottom: -90px;
   right: 15px;
   background-color: $primary-orange;
   color: #fff;
@@ -59,6 +60,12 @@ html, body {
   font-weight: bold;
   border-radius: 20px;
   padding: 10px 20px;
+  z-index: 16;
+
+  &.show {
+    bottom: 15px;
+    @include animation(0, 0.5s, showBuy);
+  }
   &:hover {
     text-decoration: none;
   }
@@ -67,6 +74,15 @@ html, body {
     width: 1.5em;
     height: 1.5em;
     margin-right: 15px;
+  }
+}
+
+@include keyframe(showBuy) {
+  from {
+    @include transform(translateY(135px));
+  }
+  to {
+    @include transform(translateY(0));
   }
 }
 
