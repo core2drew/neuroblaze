@@ -433,6 +433,9 @@
     #Header > .carousel > .carousel-inner > .carousel-item > .slide-1 {
       background-position-y: bottom, center;
       background-color: #fff; }
+    #Header > .carousel > .carousel-inner > .carousel-item > .slide-2 {
+      background-position-y: center;
+      background-color: #fff; }
     #Header > .carousel > .carousel-inner > #PublicReminder {
       position: absolute;
       bottom: 0;
@@ -468,7 +471,7 @@
   #Header > .carousel > .carousel-inner > .carousel-item > .slide-1 {
     background-image: url("assets/images/sliders/head-model-mobile.png"), url("assets/images/sliders/background-2.jpg") !important; }
   #Header > .carousel > .carousel-inner > .carousel-item > .slide-2 {
-    background-image: url("assets/images/sliders/capsule-mobile.png"), url("assets/images/sliders/blue-background.jpg") !important; }
+    background-image: url("assets/images/sliders/mental-performance.png"), url("assets/images/sliders/background-2.jpg") !important; }
   #Header > .carousel > .carousel-inner > #PublicReminder > .message {
     font-size: 0.9em; }
   #Header > .row > .col > .title {

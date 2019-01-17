@@ -35,6 +35,11 @@
       background-color: #fff;
     }
 
+    > .carousel-inner > .carousel-item > .slide-2 {
+      background-position-y: center;
+      background-color: #fff;
+    }
+
     > .carousel-inner > #PublicReminder {
       position: absolute;
       bottom: 0;
@@ -88,8 +93,8 @@
           url("assets/images/sliders/background-2.jpg") !important;
       }
       > .carousel-inner > .carousel-item > .slide-2 {
-        background-image: url("assets/images/sliders/capsule-mobile.png"),
-          url("assets/images/sliders/blue-background.jpg") !important;
+        background-image: url("assets/images/sliders/mental-performance.png"),
+          url("assets/images/sliders/background-2.jpg") !important;
       }
       > .carousel-inner > #PublicReminder > .message {
         font-size: 0.9em;
