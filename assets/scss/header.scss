@@ -3,7 +3,7 @@
   @include align-items(center);
   //background-image: url('../neuroblaze/assets/images/header.jpg');
   //background-size: cover;
-  height: 96vh;
+  height: calc(100% - 38px);
   padding: 0;
 
   > .carousel {

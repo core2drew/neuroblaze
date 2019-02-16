@@ -1,13 +1,14 @@
-#Benefits {
+#Benefits,
+#AddedBenefits {
   //@include primary-gradient();
   padding: 50px 0;
-  
+
   > .benefits {
     margin: 0;
     > .col > .row > .item > .title {
       text-align: center;
     }
-    > .col > .row > .item > .title > h2{
+    > .col > .row > .item > .title > h2 {
       font-size: 1.5em;
     }
     > .col > .row:nth-child(1) {
@@ -22,13 +23,13 @@
 }
 
 @media only screen and (max-width: 991px) {
-  #Benefits {
+  #Benefits,
+  #AddedBenefits {
     > .benefits {
-
       > .col > .row > .item > .title {
         text-align: center;
       }
-      > .col > .row > .item > .title > h2{
+      > .col > .row > .item > .title > h2 {
         font-size: 1.2em;
       }
       > .col > .row > .item > .description {

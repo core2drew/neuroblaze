@@ -1,24 +1,49 @@
 //Contact Us
-$primary-blue: #08afe4;
-$primary-yellow: #FFB400;
-$primary-orange: #FF8300;
+$primary-blue: #204089;
+$primary-blue-darker: #182d5f;
+$primary-yellow: #ffb400;
+$primary-orange: #ff8300;
 
-$top-navigation-link-color: #FFD05F;
+$top-navigation-link-color: #ffd05f;
 
-$nb-primary-button-hover-bg-color: #DF7200;
+$nb-primary-button-hover-bg-color: #df7200;
 
 @mixin primary-gradient() {
   background: #007cba; /* Old browsers */
-  background: -moz-linear-gradient(top, #007cba 0%, #00afaa 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #007cba 0%,#00afaa 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #007cba 0%,#00afaa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    top,
+    #007cba 0%,
+    #00afaa 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #007cba 0%,
+    #00afaa 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #007cba 0%,
+    #00afaa 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007cba', endColorstr='#00afaa',GradientType=0 ); /* IE6-9 */
 }
 
 @mixin primary-gradient-reverse() {
   background: #00afaa; /* Old browsers */
-  background: -moz-linear-gradient(top, #00afaa 0%, #007cba 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #00afaa 0%,#007cba 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #00afaa 0%,#007cba 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    top,
+    #00afaa 0%,
+    #007cba 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #00afaa 0%,
+    #007cba 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #00afaa 0%,
+    #007cba 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afaa', endColorstr='#007cba',GradientType=0 ); /* IE6-9 */
 }

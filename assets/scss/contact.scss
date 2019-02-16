@@ -1,28 +1,28 @@
-@import 'theme';
+@import "theme";
 
 #ContactDetailsTop {
   padding-top: 7px;
   padding-bottom: 7px;
-  background-color: $primary-blue;
+  background-color: $primary-blue-darker;
   color: #fff;
   > .row {
     > .col {
-      > .row > .details > .phone, 
+      > .row > .details > .phone,
       > .row > .details > .mobile {
         margin-right: 15px;
       }
 
-      > .row > .details > .phone, 
-      > .row > .details > .mobile, 
+      > .row > .details > .phone,
+      > .row > .details > .mobile,
       > .row > .details > .email {
         font-size: 1em;
         font-weight: 300;
       }
 
-      > .row > .details > .phone > .fas, 
-      > .row > .details > .mobile > .fas, 
-      > .row > .details >.email > .fas {
-          margin-right: 5px;
+      > .row > .details > .phone > .fas,
+      > .row > .details > .mobile > .fas,
+      > .row > .details > .email > .fas {
+        margin-right: 5px;
       }
 
       > .row > .social-media {
@@ -47,7 +47,7 @@
 #ContactUsForm {
   background-size: cover;
   padding: 70px 0 100px;
-
+  position: relative;
   > .row {
     margin: 0;
     > .message {
@@ -91,13 +91,12 @@
   #ContactDetailsTop {
     > .row {
       > .col {
-
-        > .row > .details > .phone, 
-        > .row > .details > .mobile, 
+        > .row > .details > .phone,
+        > .row > .details > .mobile,
         > .row > .details > .email {
           font-size: 0.8em;
         }
-        
+
         > .row > .social-media {
           font-size: 0.8em;
         }
@@ -114,7 +113,7 @@
   }
 }
 
-@media only screen and (max-width: 630px) { 
+@media only screen and (max-width: 630px) {
   #ContactDetailsTop {
     display: none;
   }

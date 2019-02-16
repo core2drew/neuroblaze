@@ -14,6 +14,7 @@ html,
 body {
   font-family: "Lato", sans-serif !important;
   font-size: 16px;
+  height: 100%;
 }
 
 .nb-button {
@@ -45,6 +46,13 @@ body {
       margin: auto;
       margin-top: 15px;
     }
+  }
+}
+
+.wrapper {
+  height: 100%;
+  > .site-main {
+    height: 100%;
   }
 }
 

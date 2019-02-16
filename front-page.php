@@ -30,5 +30,3 @@ get_header(); ?>
 		Buy Now
 	</a>
 </div>
-
-<?php get_footer();
